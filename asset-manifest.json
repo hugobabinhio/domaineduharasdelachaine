@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/domaineduharasdelachaine/static/css/main.74b41dcc.css",
-    "main.js": "/domaineduharasdelachaine/static/js/main.0bcda2d4.js",
+    "main.js": "/domaineduharasdelachaine/static/js/main.ca00737d.js",
     "static/media/manoir_sun_photo.jpg": "/domaineduharasdelachaine/static/media/manoir_sun_photo.d8ff50703192c14e84f5.jpg",
     "static/media/ecurie_building_photo.jpg": "/domaineduharasdelachaine/static/media/ecurie_building_photo.5ceb22cef16daabfdc5a.jpg",
     "static/media/ecurie_night_photo.jpg": "/domaineduharasdelachaine/static/media/ecurie_night_photo.991649818d4c95cc5d06.jpg",
@@ -54,10 +54,10 @@
     "static/media/terrace_icon.png": "/domaineduharasdelachaine/static/media/terrace_icon.df93a333ae5debf6a7a6.png",
     "index.html": "/domaineduharasdelachaine/index.html",
     "main.74b41dcc.css.map": "/domaineduharasdelachaine/static/css/main.74b41dcc.css.map",
-    "main.0bcda2d4.js.map": "/domaineduharasdelachaine/static/js/main.0bcda2d4.js.map"
+    "main.ca00737d.js.map": "/domaineduharasdelachaine/static/js/main.ca00737d.js.map"
   },
   "entrypoints": [
     "static/css/main.74b41dcc.css",
-    "static/js/main.0bcda2d4.js"
+    "static/js/main.ca00737d.js"
   ]
 }
