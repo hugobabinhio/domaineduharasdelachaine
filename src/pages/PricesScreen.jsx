@@ -14,8 +14,8 @@ function PricesScreen() {
             </div>
             <div className="offers-line">
                 <div className="offer-block">
-                    <span class="offers-line-title">Site de l'Ecurie</span>
-                    <div class="offer-description">
+                    <span className="offers-line-title">Site de l'Ecurie</span>
+                    <div className="offer-description">
                         <img src={ecurieThumbnail} alt="" />
                         <p>
                             Salle de réception & hébergements
@@ -27,8 +27,8 @@ function PricesScreen() {
                     </div>
                 </div>
                 <div className="offer-block">
-                    <span class="offers-line-title">Site de l'Hippodrome</span>
-                    <div class="offer-description">
+                    <span className="offers-line-title">Site de l'Hippodrome</span>
+                    <div className="offer-description">
                         <img src={hippodromeThumbnail} alt="" />
                         <p>
                             Salle de réception & hébergements
@@ -40,8 +40,8 @@ function PricesScreen() {
                     </div>
                 </div>
                 <div className="offer-block">
-                    <span class="offers-line-title">Les 2 sites</span>
-                    <div class="offer-description">
+                    <span className="offers-line-title">Les 2 sites</span>
+                    <div className="offer-description">
                         <img src={skyViewThumbnail} alt="" />
                         <p>
                             Salle de réception & hébergements

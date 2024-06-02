@@ -21,7 +21,7 @@ function ContactFooter() {
                 <img src={emailIcon} alt="" />
                 <span>florenceberthelot71@free.fr</span>
             </div>
-            <div class="contact-information-line">
+            <div className="contact-information-line">
                 <img src={addressIcon} alt="" />
                 <span>Le Haut Fousseau 53500 Saint-Pierre des Landes</span>
             </div>
