@@ -9,14 +9,14 @@ import AccessScreen from './pages/AccessScreen';
 
 function App() {
   return (
-    <HashRouter basename="/">
+    <HashRouter>
       <Routes>
         <Route path='/' exact element={<HomeScreen />}></Route>
-        <Route path='domaineduharasdelachaine/ecurie' exact element={<EcurieSiteScreen />}></Route>
-        <Route path='domaineduharasdelachaine/hippodrome' exact element={<HippodromeSiteScreen />}></Route>
-        <Route path='domaineduharasdelachaine/prices' exact element={<PricesScreen />}></Route>
-        <Route path='domaineduharasdelachaine/access' exact element={<AccessScreen />}></Route>
-        <Route path='*' element={<HomeScreen />} />
+        <Route path='/ecurie' exact element={<EcurieSiteScreen />}></Route>
+        <Route path='/hippodrome' exact element={<HippodromeSiteScreen />}></Route>
+        <Route path='/prices' exact element={<PricesScreen />}></Route>
+        <Route path='/access' exact element={<AccessScreen />}></Route>
+        <Route path='*' exact element={<HomeScreen />} />
       </Routes>
     </HashRouter>
   );
