@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import domainLogo from '../assets/images/haras_de_la_chaine_logo.png'
 
 function HeaderMenu() {
@@ -7,11 +8,11 @@ function HeaderMenu() {
             <div className="menu">
                 <img src={domainLogo} alt="" />
                 <div className="navigation-menu">
-                    <a href="/#/">Le domaine</a>
-                    <a href="/#/ecurie">Site de l'écurie</a>
-                    <a href="/#/hippodrome">Site de l'hippodrome</a>
-                    <a href="/#/prices">Tarifs & réservations</a>
-                    <a href="/#/access">Accès</a>
+                    <Link to='/'>Le domaine</Link>
+                    <Link to='/ecurie'>Site de l'écurie</Link>
+                    <Link to='/hippodrome'>Site de l'hippodrome</Link>
+                    <Link to='/prices'>Tarifs & réservations</Link>
+                    <Link to='/access'>Accès</Link>
                 </div>
             </div>
         </header>
