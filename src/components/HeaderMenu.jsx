@@ -7,11 +7,11 @@ function HeaderMenu() {
             <div className="menu">
                 <img src={domainLogo} alt="" />
                 <div className="navigation-menu">
-                    <a href="./">Le domaine</a>
-                    <a href="./ecurie">Site de l'écurie</a>
-                    <a href="./hippodrome">Site de l'hippodrome</a>
-                    <a href="./prices">Tarifs & réservations</a>
-                    <a href="./access">Accès</a>
+                    <a href="domaineduharasdelachaine">Le domaine</a>
+                    <a href="domaineduharasdelachaine/ecurie">Site de l'écurie</a>
+                    <a href="domaineduharasdelachaine/hippodrome">Site de l'hippodrome</a>
+                    <a href="domaineduharasdelachaine/prices">Tarifs & réservations</a>
+                    <a href="domaineduharasdelachaine/access">Accès</a>
                 </div>
             </div>
         </header>
