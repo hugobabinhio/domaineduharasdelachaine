@@ -7,7 +7,7 @@ function HeaderMenu() {
             <div className="menu">
                 <img src={domainLogo} alt="" />
                 <div className="navigation-menu">
-                    <a href="./home">Le domaine</a>
+                    <a href="./">Le domaine</a>
                     <a href="./ecurie">Site de l'écurie</a>
                     <a href="./hippodrome">Site de l'hippodrome</a>
                     <a href="./prices">Tarifs & réservations</a>

@@ -11,7 +11,7 @@ function App() {
   return (
     <HashRouter>
       <Routes>
-        <Route path='/home' exact element={<HomeScreen />}></Route>
+        <Route path='/' exact element={<HomeScreen />}></Route>
         <Route path='/ecurie' exact element={<EcurieSiteScreen />}></Route>
         <Route path='/hippodrome' exact element={<HippodromeSiteScreen />}></Route>
         <Route path='/prices' exact element={<PricesScreen />}></Route>
