@@ -21,7 +21,7 @@ function AccessScreen() {
                 </div>
                 <div className="access-block-detail">
                     <p>
-                        Pour accéder au de Domaine du Haras de la Chaîne :
+                        Pour accéder au Domaine du Haras de la Chaîne :
                         <br />
                         - depuis <strong>Paris</strong> via l'A11, prendre sortie n°4 à Laval
                         <br />
@@ -37,9 +37,9 @@ function AccessScreen() {
                 </div>
                 <div className="access-block-detail">
                     <p>
-                        La gare SNCF de Rennes se trouve à <strong>1h</strong> de route du domaine.
+                        Les gares SNCF de Rennes et de Laval se trouvent à <strong>moins d'1h</strong> de route du domaine.
                         <br />
-                        Lignes TGV grandes vitesses depuis Paris en <strong>1h30</strong>.
+                        Elles sont desservies par des lignes <strong>TGV grandes vitesses</strong>depuis Paris en <strong>1h30</strong>.
                     </p>
                 </div>
             </div>
@@ -50,7 +50,7 @@ function AccessScreen() {
                 </div>
                 <div className="access-block-detail">
                     <p>
-                        L'aéroport de Rennes se trouve à <strong>1h</strong> du domaine.
+                        L'aéroport de <strong>Rennes</strong> se trouve à <strong>1h</strong> du domaine.
                         <br />
                         Il est desservi par de nombreuses destinations, parmi lesquelles : Paris, Lyon, Marseille, Nice, Londres...
                     </p>
