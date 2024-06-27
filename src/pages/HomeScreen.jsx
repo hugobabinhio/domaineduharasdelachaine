@@ -69,7 +69,7 @@ function HomeScreen() {
                 </div>
                 <div>
                     <img src={sleepingIcon} alt="" className="advantages-item" />
-                    <span className="advantages-item">Jusqu'à <strong>123</strong> couchages</span>
+                    <span className="advantages-item">Jusqu'à <strong>132</strong> couchages</span>
                 </div>
                 <div>
                     <img src={catererIcon} alt="" className="advantages-item" />
@@ -111,7 +111,7 @@ function HomeScreen() {
             </div>
 
             <div className="information-block">
-                <p>
+                <p className="right-separator">
                     <span className="information-block-title">Nos partenaires</span>
                     <span>Nous proposons une très large gamme de partenaires avec lesquels nous avons l'habitude
                         de travailler :

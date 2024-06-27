@@ -9,8 +9,8 @@ function HeaderMenu() {
                 <img src={domainLogo} alt="" />
                 <div className="navigation-menu">
                     <Link to='/'>Le domaine</Link>
-                    <Link to='/ecurie'>Site de l'écurie</Link>
                     <Link to='/hippodrome'>Site de l'hippodrome</Link>
+                    <Link to='/ecurie'>Site de l'écurie</Link>
                     <Link to='/prices'>Tarifs & réservations</Link>
                     <Link to='/access'>Accès</Link>
                 </div>

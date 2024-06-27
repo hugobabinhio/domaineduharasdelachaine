@@ -10,22 +10,9 @@ function PricesScreen() {
         <div>
             <HeaderMenu />
             <div className="prices-title">
-                <h3>Nos offres (2024/2025)</h3>
+                <h3>Nos offres (2024/2025/2026)</h3>
             </div>
             <div className="offers-line">
-                <div className="offer-block">
-                    <span className="offers-line-title">Site de l'Ecurie</span>
-                    <div className="offer-description">
-                        <img src={ecurieThumbnail} alt="" />
-                        <p>
-                            Salle de réception & hébergements
-                            <br />
-                            Prix : <strong>4500€ TTC</strong>
-                            <br />
-                            <i>Nous contacter pour réserver</i>
-                        </p>
-                    </div>
-                </div>
                 <div className="offer-block">
                     <span className="offers-line-title">Site de l'Hippodrome</span>
                     <div className="offer-description">
@@ -33,7 +20,20 @@ function PricesScreen() {
                         <p>
                             Salle de réception & hébergements
                             <br />
-                            Prix : <strong>6500€ TTC</strong>
+                            Prix : <strong>6500€ TTC *</strong>
+                            <br />
+                            <i>Nous contacter pour réserver</i>
+                        </p>
+                    </div>
+                </div>
+                <div className="offer-block">
+                    <span className="offers-line-title">Site de l'Ecurie</span>
+                    <div className="offer-description">
+                        <img src={ecurieThumbnail} alt="" />
+                        <p>
+                            Salle de réception & hébergements
+                            <br />
+                            Prix : <strong>4500€ TTC *</strong>
                             <br />
                             <i>Nous contacter pour réserver</i>
                         </p>
@@ -46,12 +46,15 @@ function PricesScreen() {
                         <p>
                             Salle de réception & hébergements
                             <br />
-                            Prix : <strong>8500€ TTC</strong>
+                            Prix : <strong>8500€ TTC *</strong>
                             <br />
                             <i>Nous contacter pour réserver</i>
                         </p>
                     </div>
                 </div>
+            </div>
+            <div className="legend-section">
+                <strong>*</strong> Nous nous réservons le droit de modifier les tarifs pour l'année <strong>2026</strong>.
             </div>
 
             <ContactFooter />

@@ -231,12 +231,13 @@ h2 {
 
 .summary-block {
   font-family: "Roboto";
+  font-size: 1.2rem;
   padding: 100px 280px 100px 280px;
 }
 
 .summary-block h4 {
   display: block;
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   letter-spacing: 5px;
   font-weight: bold;
   text-transform: uppercase;
@@ -255,12 +256,13 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 1.2rem;
   padding: 100px 250px 100px 250px;
   font-family: "Roboto";
 }
 
 .information-block-title {
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   letter-spacing: 5px;
   font-weight: bold;
   text-transform: uppercase;
@@ -337,7 +339,7 @@ h2 {
   display: grid;
   grid-template-columns: 33% 33% 33%;
   text-align: center;
-  padding: 100px 50px;
+  padding: 100px 50px 20px 50px;
   font-size: 2.5rem;
 }
 
@@ -434,6 +436,11 @@ footer img {
 }
 
 /**** TRANSVERSE ****/
+
+.legend-section {
+  padding: 20px 50px 100px 50px;
+  font-size: 1.8rem;
+}
 
 .odd-section {
   background-color: rgb(216, 217, 205);

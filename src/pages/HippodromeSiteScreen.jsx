@@ -60,7 +60,7 @@ function HippodromeSiteScreen() {
                     </span>
                     <br />
                     <span>
-                        Désormais c'est une salle flambant neuve pouvant accueillir jusqu'à <strong>280 convives</strong> dans une pièce de <strong>340 m²</strong>.
+                        Désormais c'est une salle flambant neuve pouvant accueillir jusqu'à <strong>265 convives</strong> dans une pièce de <strong>340 m²</strong>.
                     </span>
                     <br />
                     <span>
@@ -80,9 +80,9 @@ function HippodromeSiteScreen() {
                     <span>- Le Manoir Coventry (44 couchages)</span>
                     <span>- Le Pur Sang (19 couchages)</span>
                     <span>- La Sellerie (12 couchages)</span>
-                    <span>- Le Paddock (9 couchages)</span>
+                    <span>- Le Paddock (10 couchages)</span>
                     <span>
-                        Chaque chambre est dotée de ses <strong>sanitaires</strong> et de <strong>sa salle de bains.</strong>
+                        Chaque chambre est dotée de ses <strong>sanitaires</strong> et de <strong>sa salle d'eau.</strong>
                     </span>
                 </p>
             </div>
@@ -96,11 +96,11 @@ function HippodromeSiteScreen() {
                     <br />
                     <span>
                         Dans ce Manoir du 18ème siècle, entouré du verdure vous pourrez recevoir vos hôtes en toute
-                        convivialité et confort :<strong>14 couchages</strong> sont à votre disposition.
+                        convivialité et confort : <strong>44 couchages</strong> sont à votre disposition.
                     </span>
                     <br />
                     <span>
-                        Pour vos <strong>loisirs</strong> vous disposerez de terrains de tennis, de football, de basket, de pettanque
+                        Pour vos <strong>loisirs</strong> vous disposerez de terrains de tennis, de football, de basket,
                         ainsi que d'une table de tennis de table.
                     </span>
                 </p>
@@ -140,7 +140,7 @@ function HippodromeSiteScreen() {
                     </span>
                     <br />
                     <span>
-                        Rénové tout récemment, ce bâtiment offre <strong>x couchages</strong> additionnels.
+                        Rénové tout récemment, ce bâtiment offre <strong>10 couchages</strong> additionnels.
                     </span>
                 </p>
             </div>

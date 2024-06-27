@@ -41,7 +41,24 @@ function EcurieSiteScreen() {
                 </div>
             </div>
 
-            <div className="summary-block odd-section">
+            <div className="information-block odd-section">
+                <ImagesCarousel images={[ecurieRoomPhoto, ecurieNightPhoto, ecurieSunPhoto]}></ImagesCarousel>
+                <p className="left-separator">
+                    <span className="information-block-title">
+                        La salle de réception
+                    </span>
+                    <span>
+                        Cette ancienne écrurie entièrement transformée allie le charme de l'ancien et du moderne.
+                    </span>
+                    <span>
+                        Située au coeur d'un élevage de purs sangs, elle peut recevoir jusqu'à <strong>145
+                            convives</strong> (office de
+                        réchauffage, salle de danse, et terrasse).
+                    </span>
+                </p>
+            </div>
+
+            <div className="summary-block">
                 <p>
                     <h4 className="summary-block-title">Les hébergement de l'écurie</h4>
                     <span>
@@ -53,24 +70,7 @@ function EcurieSiteScreen() {
                     <span>- la Maison du Palefrenier (9 couchages)</span>
                     <span>- la Maison du Jockey (6 couchages)</span>
                     <span>
-                        Chaque chambre est dotée de ses <strong>sanitaires</strong> et de <strong>sa salle de bains.</strong>
-                    </span>
-                </p>
-            </div>
-
-            <div className="information-block">
-                <ImagesCarousel images={[ecurieRoomPhoto, ecurieNightPhoto, ecurieSunPhoto]}></ImagesCarousel>
-                <p className="left-separator">
-                    <span className="information-block-title">
-                        La salle de réception
-                    </span>
-                    <span>
-                        Cette ancienne écrurie entièrement transformée allie le charme de l'ancien et du moderne.
-                    </span>
-                    <span>
-                        Située au coeur d'un élevage de purs sangs, elle peut recevoir jusqu'à <strong>150
-                            convives</strong> (office de
-                        réchauffage, salle de danse, et terrasse).
+                        Chaque chambre est dotée de ses <strong>sanitaires</strong> et de <strong>sa salle d'eau.</strong>
                     </span>
                 </p>
             </div>

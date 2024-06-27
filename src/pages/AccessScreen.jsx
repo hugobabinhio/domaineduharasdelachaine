@@ -37,9 +37,9 @@ function AccessScreen() {
                 </div>
                 <div className="access-block-detail">
                     <p>
-                        Les gares SNCF de Rennes et de Laval se trouvent à <strong>moins d'1h</strong> de route du domaine.
+                        Les gares SNCF de <strong>Rennes</strong>, de <strong>Laval</strong>, et de <strong>Vitré</strong> se trouvent respectivement à 45, 40, et 20 min du domaine.
                         <br />
-                        Elles sont desservies par des lignes <strong>TGV grandes vitesses</strong>depuis Paris en <strong>1h30</strong>.
+                        Elles sont desservies par des lignes <strong>TGV grandes vitesses</strong> depuis Paris en <strong>1h30</strong>.
                     </p>
                 </div>
             </div>
@@ -52,7 +52,7 @@ function AccessScreen() {
                     <p>
                         L'aéroport de <strong>Rennes</strong> se trouve à <strong>1h</strong> du domaine.
                         <br />
-                        Il est desservi par de nombreuses destinations, parmi lesquelles : Paris, Lyon, Marseille, Nice, Londres...
+                        Il est desservi par de nombreuses destinations, parmi lesquelles : Paris, Lyon, Marseille, Nice, Londres, Dublin...
                     </p>
                 </div>
             </div>
