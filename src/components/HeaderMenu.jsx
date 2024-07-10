@@ -1,8 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import domainLogo from '../assets/images/haras_de_la_chaine_logo.png'
 
 function HeaderMenu() {
+    const [isOpen, setIsOpen] = useState(false)
+
+    const toggleMenu = () => {
+        setIsOpen((open) => !open)
+    }
+
     return (
         <header>
             <div className="menu">
