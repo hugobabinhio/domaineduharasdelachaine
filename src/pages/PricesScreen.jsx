@@ -10,8 +10,9 @@ function PricesScreen() {
         <div>
             <HeaderMenu />
             <div className="prices-title">
-                <h3>Nos offres (2024/2025/2026)</h3>
+                <h3>Nos offres (2024 à 2026)</h3>
             </div>
+
             <div className="offers-line">
                 <div className="offer-block">
                     <span className="offers-line-title">Site de l'Hippodrome</span>
