@@ -60,13 +60,13 @@ function EcurieSiteScreen() {
 
             <div className="summary-block">
                 <p>
-                    <h4 className="summary-block-title">Les hébergement de l'écurie</h4>
+                    <h4 className="summary-block-title">Les hébergements de l'écurie</h4>
                     <span>
                         En plus de la salle de réception, le site regroupe un ensemble de <strong>4 maisons </strong>
                         avec un total de <strong>42 couchages </strong>:
                     </span>
-                    <span>- la Maison des Lads (13 couchages)</span>
                     <span>- la Maison de l'Etrier (14 couchages)</span>
+                    <span>- la Maison des Lads (13 couchages)</span>
                     <span>- la Maison du Palefrenier (9 couchages)</span>
                     <span>- la Maison du Jockey (6 couchages)</span>
                     <span>
@@ -76,8 +76,21 @@ function EcurieSiteScreen() {
             </div>
 
             <div className="information-block odd-section">
-
                 <p className="right-separator">
+                    <span className="information-block-title">
+                        La maison de l'étrier
+                    </span>
+                    <br />
+                    <span>
+                        La Maison de l'Etrier se situe à 950m de la salle de réception de l'Ecurie et dispose de <strong>14 couchages</strong>.
+                    </span>
+                </p>
+                <ImagesCarousel images={[etrierHousePhoto, etrierLoungePhoto]}></ImagesCarousel>
+            </div>
+
+            <div className="information-block">
+                <ImagesCarousel images={[ladsHomePhoto, ladsRoomPhoto, ladsHallPhoto]}></ImagesCarousel>
+                <p className="left-separator">
                     <span className="information-block-title">
                         La maison des Lads
                     </span>
@@ -86,20 +99,6 @@ function EcurieSiteScreen() {
                         La Maison des Lads se situe à proximité immédiate de la salle de réception de l'Ecurie
                         et
                         présente une capacité de <strong>13 couchages</strong>.
-                    </span>
-                </p>
-                <ImagesCarousel images={[ladsHomePhoto, ladsRoomPhoto, ladsHallPhoto]}></ImagesCarousel>
-            </div>
-
-            <div className="information-block">
-                <ImagesCarousel images={[etrierHousePhoto, etrierLoungePhoto]}></ImagesCarousel>
-                <p className="left-separator">
-                    <span className="information-block-title">
-                        La maison de l'étrier
-                    </span>
-                    <br />
-                    <span>
-                        La Maison de l'Etrier se situe à 950m de la salle de réception de l'Ecurie et dispose de <strong>14 couchages</strong>.
                     </span>
                 </p>
             </div>

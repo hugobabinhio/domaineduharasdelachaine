@@ -10,6 +10,7 @@ import hippodromeRoomWindowsPhoto from '../assets/images/hippodrome_room_windows
 import manoirBeforeCeremonyPhoto from '../assets/images/manoir_before_ceremony.png'
 import manoirBuildingsPhoto from '../assets/images/manoir_buildings_photo.jpg'
 import manoirSunPhoto from '../assets/images/manoir_sun_photo.jpg'
+import paddockOutsidePhoto from '../assets/images/paddock_outside_photo.jfif'
 import purSangHousePhoto from '../assets/images/pur_sang_house_photo.jpg'
 import purSangRoomPhoto from '../assets/images/pur_sang_room_photo.jpg'
 import sellerieHousePhoto from '../assets/images/sellerie_house_photo.jpg'
@@ -56,7 +57,7 @@ function HippodromeSiteScreen() {
                     </span>
                     <br />
                     <span>
-                        Cette ancienne étable et sa salle de traite était en ruine avant sa rénovation. Grâce à son agrandissement, la surfance existante a pu être doublée.
+                        Cette ancienne étable et sa salle de traite étaient en ruine avant sa rénovation. Grâce à son agrandissement, la surfance existante a pu être doublée.
                     </span>
                     <br />
                     <span>
@@ -72,7 +73,7 @@ function HippodromeSiteScreen() {
 
             <div className="summary-block">
                 <p>
-                    <h4 className="summary-block-title">Les hébergement de l'hippodrome</h4>
+                    <h4 className="summary-block-title">Les hébergements de l'hippodrome</h4>
                     <span>
                         En plus de la salle de réception, le site regroupe un semble de <strong>4 logements </strong>
                         avec un total de <strong>84 couchages </strong>:
@@ -95,12 +96,12 @@ function HippodromeSiteScreen() {
                     </span>
                     <br />
                     <span>
-                        Dans ce Manoir du 18ème siècle, entouré du verdure vous pourrez recevoir vos hôtes en toute
+                        Dans ce Manoir du 18ème siècle entouré de verdure, vous pourrez recevoir vos hôtes en toute
                         convivialité et confort : <strong>44 couchages</strong> sont à votre disposition.
                     </span>
                     <br />
                     <span>
-                        Pour vos <strong>loisirs</strong> vous disposerez de terrains de tennis, de football, de basket,
+                        Pour vos <strong>loisirs</strong>, vous disposerez de terrains de tennis, de football, de basket,
                         ainsi que d'une table de tennis de table.
                     </span>
                 </p>
@@ -133,7 +134,7 @@ function HippodromeSiteScreen() {
             </div>
 
             <div className="information-block">
-                <ImagesCarousel images={[]}></ImagesCarousel>
+                <ImagesCarousel images={[paddockOutsidePhoto]}></ImagesCarousel>
                 <p className="left-separator">
                     <span className="information-block-title">
                         Le Paddock

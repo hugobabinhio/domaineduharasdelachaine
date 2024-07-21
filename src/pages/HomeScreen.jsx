@@ -35,7 +35,7 @@ function HomeScreen() {
                     <p className="event-subtitle">Mariages, anniversaires, weekend de fête, ...</p>
                     <div>
                         <span>Privatisez entièrement le domaine ou l'un des deux sites pour votre mariage ou votre évènement
-                            privé. Partagez ce moment unique dans un lieu authentique et conviviale.</span>
+                            privé. Partagez ce moment unique dans un lieu authentique et convivial.</span>
                     </div>
                 </div>
                 <div className="event-item">
@@ -45,7 +45,7 @@ function HomeScreen() {
                     <div>
                         <span>
                             Organisez vos événements professionnels à tout moment de l'année, dans une ambiance nature,
-                            chic, et conviviale. Boostez la cohésion de vos équipes daus un environnemment propice au bien
+                            chic, et conviviale. Boostez la cohésion de vos équipes dans un environnemment propice au bien
                             être.
                         </span>
                     </div>
@@ -124,7 +124,7 @@ function HomeScreen() {
                         - photographes</span>
                     <br />
                     <span>
-                        - disc jockey
+                        - DJs
                     </span>
                     <br />
                     <span>
@@ -132,7 +132,7 @@ function HomeScreen() {
                     </span>
                     <br />
                     <span>
-                        - loueur de barnums
+                        - loueurs de barnums
                     </span>
                 </p>
                 <img className="green-border" src={cateringPhoto} alt="" />
