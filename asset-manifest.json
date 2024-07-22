@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/domaineduharasdelachaine/static/css/main.84d58672.css",
-    "main.js": "/domaineduharasdelachaine/static/js/main.46ce1d1f.js",
+    "main.js": "/domaineduharasdelachaine/static/js/main.f8e4f4e9.js",
     "static/media/manoir_sun_photo.jpg": "/domaineduharasdelachaine/static/media/manoir_sun_photo.d8ff50703192c14e84f5.jpg",
     "static/media/ecurie_building_photo.jpg": "/domaineduharasdelachaine/static/media/ecurie_building_photo.5ceb22cef16daabfdc5a.jpg",
     "static/media/ecurie_night_photo.jpg": "/domaineduharasdelachaine/static/media/ecurie_night_photo.991649818d4c95cc5d06.jpg",
@@ -38,6 +38,7 @@
     "static/media/haras_de_la_chaine_logo.png": "/domaineduharasdelachaine/static/media/haras_de_la_chaine_logo.163f7f1d9ce7a0cc1983.png",
     "static/media/RobotoCondensed-Light.ttf": "/domaineduharasdelachaine/static/media/RobotoCondensed-Light.43aa3135f2d0207e6473.ttf",
     "static/media/manoir_buildings_photo.jpg": "/domaineduharasdelachaine/static/media/manoir_buildings_photo.c916b3b3543ad4df0906.jpg",
+    "static/media/paddock_outside_photo.jfif": "/domaineduharasdelachaine/static/media/paddock_outside_photo.c0fc255007bcc1476a49.jfif",
     "static/media/mariage_photo.jpg": "/domaineduharasdelachaine/static/media/mariage_photo.9503333363068fa7a775.jpg",
     "static/media/wedding_awards_badge.jpg": "/domaineduharasdelachaine/static/media/wedding_awards_badge.dccf1b7b5421bbeeaa89.jpg",
     "static/media/customers_feedback_photo.png": "/domaineduharasdelachaine/static/media/customers_feedback_photo.69cf294afe5c2fc9977f.png",
@@ -54,10 +55,10 @@
     "static/media/terrace_icon.png": "/domaineduharasdelachaine/static/media/terrace_icon.df93a333ae5debf6a7a6.png",
     "index.html": "/domaineduharasdelachaine/index.html",
     "main.84d58672.css.map": "/domaineduharasdelachaine/static/css/main.84d58672.css.map",
-    "main.46ce1d1f.js.map": "/domaineduharasdelachaine/static/js/main.46ce1d1f.js.map"
+    "main.f8e4f4e9.js.map": "/domaineduharasdelachaine/static/js/main.f8e4f4e9.js.map"
   },
   "entrypoints": [
     "static/css/main.84d58672.css",
-    "static/js/main.46ce1d1f.js"
+    "static/js/main.f8e4f4e9.js"
   ]
 }
