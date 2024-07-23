@@ -51,7 +51,7 @@ function EcurieSiteScreen() {
                         Cette ancienne écrurie entièrement transformée allie le charme de l'ancien et du moderne.
                     </span>
                     <span>
-                        Située au coeur d'un élevage de purs sangs, elle peut recevoir jusqu'à <strong>145
+                        Située au coeur d'un élevage de purs sangs, elle peut recevoir jusqu'à <strong>140
                             convives</strong> (office de
                         réchauffage, salle de danse, et terrasse).
                     </span>

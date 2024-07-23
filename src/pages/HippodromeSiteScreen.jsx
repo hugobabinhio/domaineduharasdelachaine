@@ -76,7 +76,7 @@ function HippodromeSiteScreen() {
                     <h4 className="summary-block-title">Les hébergements de l'hippodrome</h4>
                     <span>
                         En plus de la salle de réception, le site regroupe un semble de <strong>4 logements </strong>
-                        avec un total de <strong>84 couchages </strong>:
+                        avec un total de <strong>85 couchages </strong>:
                     </span>
                     <span>- Le Manoir Coventry (44 couchages)</span>
                     <span>- Le Pur Sang (19 couchages)</span>
