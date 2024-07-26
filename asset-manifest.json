@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/domaineduharasdelachaine/static/css/main.84d58672.css",
-    "main.js": "/domaineduharasdelachaine/static/js/main.14f258b5.js",
+    "main.js": "/domaineduharasdelachaine/static/js/main.c788916a.js",
     "static/media/manoir_sun_photo.jpg": "/domaineduharasdelachaine/static/media/manoir_sun_photo.d8ff50703192c14e84f5.jpg",
     "static/media/ecurie_building_photo.jpg": "/domaineduharasdelachaine/static/media/ecurie_building_photo.5ceb22cef16daabfdc5a.jpg",
     "static/media/ecurie_night_photo.jpg": "/domaineduharasdelachaine/static/media/ecurie_night_photo.991649818d4c95cc5d06.jpg",
@@ -53,12 +53,13 @@
     "static/media/opinion_badge.png": "/domaineduharasdelachaine/static/media/opinion_badge.365c2634ac91558947bf.png",
     "static/media/marquee_icon.png": "/domaineduharasdelachaine/static/media/marquee_icon.5ce7549d8c814021379b.png",
     "static/media/terrace_icon.png": "/domaineduharasdelachaine/static/media/terrace_icon.df93a333ae5debf6a7a6.png",
+    "static/media/pmr_access_icon.png": "/domaineduharasdelachaine/static/media/pmr_access_icon.ae1c65b26ac5c44cb63b.png",
     "index.html": "/domaineduharasdelachaine/index.html",
     "main.84d58672.css.map": "/domaineduharasdelachaine/static/css/main.84d58672.css.map",
-    "main.14f258b5.js.map": "/domaineduharasdelachaine/static/js/main.14f258b5.js.map"
+    "main.c788916a.js.map": "/domaineduharasdelachaine/static/js/main.c788916a.js.map"
   },
   "entrypoints": [
     "static/css/main.84d58672.css",
-    "static/js/main.14f258b5.js"
+    "static/js/main.c788916a.js"
   ]
 }
