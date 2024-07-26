@@ -1,4 +1,5 @@
 import React from "react";
+import pmrAccessIcon from '../assets/images/icons/pmr_access_icon.png'
 import receptionRoomIcon from '../assets/images/icons/reception_room_icon.png'
 import sleepingIcon from '../assets/images/icons/sleeping_icon.png'
 import terraceIcon from '../assets/images/icons/terrace_icon.png'
@@ -39,6 +40,10 @@ function EcurieSiteScreen() {
                     <img src={terraceIcon} alt="" className="advantages-item" />
                     <span className="advantages-item"><strong>1</strong> grande terrasse</span>
                 </div>
+                <div>
+                    <img src={pmrAccessIcon} alt="" className="advantages-item" />
+                    <span className="advantages-item">Accès <strong>PMR</strong></span>
+                </div>
             </div>
 
             <div className="information-block odd-section">
@@ -54,6 +59,9 @@ function EcurieSiteScreen() {
                         Située au coeur d'un élevage de purs sangs, elle peut recevoir jusqu'à <strong>140
                             convives</strong> (office de
                         réchauffage, salle de danse, et terrasse).
+                    </span>
+                    <span>
+                        Elle est accessible et équipée pour les personnes à mobilité réduite.
                     </span>
                 </p>
             </div>

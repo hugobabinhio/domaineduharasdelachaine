@@ -1,5 +1,6 @@
 import React from "react"
 import marqueeIcon from '../assets/images/icons/marquee_icon.png'
+import pmrAccessIcon from '../assets/images/icons/pmr_access_icon.png'
 import receptionRoomIcon from '../assets/images/icons/reception_room_icon.png'
 import sleepingIcon from '../assets/images/icons/sleeping_icon.png'
 import tennisIcon from '../assets/images/icons/tennis_icon.png'
@@ -48,6 +49,10 @@ function HippodromeSiteScreen() {
                     <img src={tennisIcon} alt="" className="advantages-item" />
                     <span className="advantages-item">Loisirs</span>
                 </div>
+                <div>
+                    <img src={pmrAccessIcon} alt="" className="advantages-item" />
+                    <span className="advantages-item">Accès <strong>PMR</strong></span>
+                </div>
             </div>
 
             <div className="information-block odd-section">
@@ -57,7 +62,7 @@ function HippodromeSiteScreen() {
                     </span>
                     <br />
                     <span>
-                        Cette ancienne étable et sa salle de traite étaient en ruine avant sa rénovation. Grâce à son agrandissement, la surfance existante a pu être doublée.
+                        Cette ancienne étable et sa salle de traite étaient en ruine avant sa rénovation. Grâce à son agrandissement, la surface existante a pu être doublée.
                     </span>
                     <br />
                     <span>
@@ -66,6 +71,9 @@ function HippodromeSiteScreen() {
                     <br />
                     <span>
                         Elle dispose d'une <strong>cuisine professionnelle</strong> et d'une <strong>terrasse</strong> orientée plein sud.
+                    </span>
+                    <span>
+                        Elle est accessible et équipée pour les personnes à mobilité réduite.
                     </span>
                 </p>
                 <ImagesCarousel images={[hippodromeRoomPhoto, hippodromeRoomWindowsPhoto, hippodromeEmptyRoomPhoto]}></ImagesCarousel>
