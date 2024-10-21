@@ -10,6 +10,7 @@ import hippodromeRoomPhoto from '../assets/images/hippodrome_room_photo.jpg'
 import hippodromeRoomWindowsPhoto from '../assets/images/hippodrome_room_windows_photo.jpeg'
 import manoirBeforeCeremonyPhoto from '../assets/images/manoir_before_ceremony.png'
 import manoirBuildingsPhoto from '../assets/images/manoir_buildings_photo.jpg'
+import manoirOutsidePhoto from '../assets/images/manoir_outside_photo.jpg'
 import manoirSunPhoto from '../assets/images/manoir_sun_photo.jpg'
 import paddockOutsidePhoto from '../assets/images/paddock_outside_photo.jfif'
 import purSangHousePhoto from '../assets/images/pur_sang_house_photo.jpg'
@@ -97,7 +98,7 @@ function HippodromeSiteScreen() {
             </div>
 
             <div className="information-block odd-section">
-                <ImagesCarousel images={[manoirSunPhoto, manoirBuildingsPhoto, manoirBeforeCeremonyPhoto]}></ImagesCarousel>
+                <ImagesCarousel images={[manoirOutsidePhoto, manoirSunPhoto, manoirBuildingsPhoto, manoirBeforeCeremonyPhoto]}></ImagesCarousel>
                 <p className="left-separator">
                     <span className="information-block-title">
                         Le Manoir Coventry

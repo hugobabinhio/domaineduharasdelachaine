@@ -18,7 +18,7 @@ function ImagesCarousel({ images }) {
             <Carousel
                 autoPlay={false}
                 interval={6000}
-                infiniteLoop
+                infiniteLoop={true}
                 thumbWidth={120}
                 showIndicators={false}
                 showStatus={false}

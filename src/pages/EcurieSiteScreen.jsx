@@ -6,11 +6,13 @@ import terraceIcon from '../assets/images/icons/terrace_icon.png'
 import ecurieNightPhoto from '../assets/images/ecurie_night_photo.jpg'
 import ecurieRoomPhoto from '../assets/images/ecurie_room_photo.jpg'
 import ecurieSunPhoto from '../assets/images/ecurie_sun_photo.png'
+import ladsBlueRoomPhoto from '../assets/images/lads_blue_room.jpg'
 import ladsHallPhoto from '../assets/images/lads_hall_photo.jpg'
 import ladsHomePhoto from '../assets/images/lads_home_photo.jpg'
 import ladsRoomPhoto from '../assets/images/lads_room_photo.jpg'
 import etrierHousePhoto from '../assets/images/etrier_house_photo.jpeg'
 import etrierLoungePhoto from '../assets/images/etrier_lounge_photo.jpg'
+import jockeyEntrancePhoto from '../assets/images/jockey_entrance_photo.jpg'
 import jockeyHouseOutsidePhoto from '../assets/images/jockey_house_outside_photo.jpg'
 import jockeyHouseVerandaPhoto from '../assets/images/jockey_house_veranda_photo.png'
 import palfrenierHouseInsidePhoto from '../assets/images/palfrenier_house_inside_photo.png'
@@ -97,7 +99,7 @@ function EcurieSiteScreen() {
             </div>
 
             <div className="information-block">
-                <ImagesCarousel images={[ladsHomePhoto, ladsRoomPhoto, ladsHallPhoto]}></ImagesCarousel>
+                <ImagesCarousel images={[ladsRoomPhoto, ladsBlueRoomPhoto, ladsHomePhoto, ladsHallPhoto]}></ImagesCarousel>
                 <p className="left-separator">
                     <span className="information-block-title">
                         La maison des Lads
@@ -126,7 +128,7 @@ function EcurieSiteScreen() {
             </div>
 
             <div className="information-block">
-                <ImagesCarousel images={[jockeyHouseOutsidePhoto, jockeyHouseVerandaPhoto]}></ImagesCarousel>
+                <ImagesCarousel images={[jockeyHouseOutsidePhoto, jockeyEntrancePhoto, jockeyHouseVerandaPhoto]}></ImagesCarousel>
                 <p className="left-separator">
                     <span className="information-block-title">
                         La maison du jockey
