@@ -1,8 +1,9 @@
 {
   "files": {
     "main.css": "/domaineduharasdelachaine/static/css/main.84d58672.css",
-    "main.js": "/domaineduharasdelachaine/static/js/main.c788916a.js",
+    "main.js": "/domaineduharasdelachaine/static/js/main.5939defe.js",
     "static/media/manoir_sun_photo.jpg": "/domaineduharasdelachaine/static/media/manoir_sun_photo.d8ff50703192c14e84f5.jpg",
+    "static/media/manoir_outside_photo.jpg": "/domaineduharasdelachaine/static/media/manoir_outside_photo.538339557eb721dd3f19.jpg",
     "static/media/ecurie_building_photo.jpg": "/domaineduharasdelachaine/static/media/ecurie_building_photo.5ceb22cef16daabfdc5a.jpg",
     "static/media/ecurie_night_photo.jpg": "/domaineduharasdelachaine/static/media/ecurie_night_photo.991649818d4c95cc5d06.jpg",
     "static/media/manoir_before_ceremony.png": "/domaineduharasdelachaine/static/media/manoir_before_ceremony.3caf5bbbaf7aac347fb2.png",
@@ -22,11 +23,13 @@
     "static/media/theme_party_photo.png": "/domaineduharasdelachaine/static/media/theme_party_photo.58c1c82feb6290983c8b.png",
     "static/media/ecurie_room_photo.jpg": "/domaineduharasdelachaine/static/media/ecurie_room_photo.7010695c9ed0c6f1b53c.jpg",
     "static/media/etrier_lounge_photo.jpg": "/domaineduharasdelachaine/static/media/etrier_lounge_photo.72f2adf3b78b9aa49b4b.jpg",
+    "static/media/jockey_entrance_photo.jpg": "/domaineduharasdelachaine/static/media/jockey_entrance_photo.451ab5eec67ffe02780d.jpg",
     "static/media/lads_hall_photo.jpg": "/domaineduharasdelachaine/static/media/lads_hall_photo.99b062c69dd40d76d080.jpg",
     "static/media/hippodrome_room_photo.jpg": "/domaineduharasdelachaine/static/media/hippodrome_room_photo.6645015dad88aab68b54.jpg",
     "static/media/jockey_house_veranda_photo.png": "/domaineduharasdelachaine/static/media/jockey_house_veranda_photo.b4aeb1d9dbe18ebe2b46.png",
     "static/media/palfrenier_house_outside_photo.png": "/domaineduharasdelachaine/static/media/palfrenier_house_outside_photo.b34a4522a645eac4f31d.png",
     "static/media/lads_room_photo.jpg": "/domaineduharasdelachaine/static/media/lads_room_photo.fbfef29d72e51b8dfb1e.jpg",
+    "static/media/lads_blue_room.jpg": "/domaineduharasdelachaine/static/media/lads_blue_room.990aa878d5fed0b2d460.jpg",
     "static/media/sellerie_room_photo.jpg": "/domaineduharasdelachaine/static/media/sellerie_room_photo.46c761fa9321955d356d.jpg",
     "static/media/etrier_house_photo.jpeg": "/domaineduharasdelachaine/static/media/etrier_house_photo.4105921abe7867f959af.jpeg",
     "static/media/hippodrome_empty_room_poho.jpg": "/domaineduharasdelachaine/static/media/hippodrome_empty_room_poho.15a7c89cb17b375418b1.jpg",
@@ -41,7 +44,7 @@
     "static/media/paddock_outside_photo.jfif": "/domaineduharasdelachaine/static/media/paddock_outside_photo.c0fc255007bcc1476a49.jfif",
     "static/media/mariage_photo.jpg": "/domaineduharasdelachaine/static/media/mariage_photo.9503333363068fa7a775.jpg",
     "static/media/wedding_awards_badge.jpg": "/domaineduharasdelachaine/static/media/wedding_awards_badge.dccf1b7b5421bbeeaa89.jpg",
-    "static/media/customers_feedback_photo.png": "/domaineduharasdelachaine/static/media/customers_feedback_photo.69cf294afe5c2fc9977f.png",
+    "static/media/customers_feedback_photo.png": "/domaineduharasdelachaine/static/media/customers_feedback_photo.d1f8dc02bdee3cfaa4b9.png",
     "static/media/ark_icon.png": "/domaineduharasdelachaine/static/media/ark_icon.5bcc819d6f04ccffc65f.png",
     "static/media/tennis_icon.png": "/domaineduharasdelachaine/static/media/tennis_icon.520d950b1549637600c0.png",
     "static/media/location_icon.png": "/domaineduharasdelachaine/static/media/location_icon.50a8192ea65c91314bfc.png",
@@ -56,10 +59,10 @@
     "static/media/pmr_access_icon.png": "/domaineduharasdelachaine/static/media/pmr_access_icon.ae1c65b26ac5c44cb63b.png",
     "index.html": "/domaineduharasdelachaine/index.html",
     "main.84d58672.css.map": "/domaineduharasdelachaine/static/css/main.84d58672.css.map",
-    "main.c788916a.js.map": "/domaineduharasdelachaine/static/js/main.c788916a.js.map"
+    "main.5939defe.js.map": "/domaineduharasdelachaine/static/js/main.5939defe.js.map"
   },
   "entrypoints": [
     "static/css/main.84d58672.css",
-    "static/js/main.c788916a.js"
+    "static/js/main.5939defe.js"
   ]
 }
