@@ -9,7 +9,7 @@ function AccessScreen() {
     return (
         <div>
             <HeaderMenu />
-            <iframe className="iframe-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1359380.1121579898!2d-2.396905227604598!3d48.282860141034995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48093c5d3d8adbfd%3A0xd17b944f337a1!2sHaras%20de%20la%20Cha%C3%AEne!5e0!3m2!1sfr!2sfr!4v1714756433127!5m2!1sfr!2sfr" height="450" style={{ border: 0 }} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            <iframe className="iframe-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1359380.1121579898!2d-2.396905227604598!3d48.282860141034995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48093c5d3d8adbfd%3A0xd17b944f337a1!2sHaras%20de%20la%20Cha%C3%AEne!5e0!3m2!1sfr!2sfr!4v1714756433127!5m2!1sfr!2sfr" height="450" style={{ border: 0 }} loading="lazy" referrerPolicy="no-referrer-when-downgrade">
             </iframe>
             <div className="access-title">
                 Accès au domaine
