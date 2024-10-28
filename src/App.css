@@ -439,6 +439,10 @@ footer img {
   padding-right: 10px;
 }
 
+.contact-information-line br {
+  display: none;
+}
+
 /**** TRANSVERSE ****/
 
 .legend-section {
@@ -610,6 +614,10 @@ footer img {
 
   .contact-information-line span {
     padding: 0 2px;
+  }
+
+  .contact-information-line br {
+    display: block;
   }
 
 }

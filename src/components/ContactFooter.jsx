@@ -11,13 +11,15 @@ function ContactFooter() {
                 <span>Didier Blot : </span>
                 <img src={phoneIcon} alt="" />
                 <span>06 15 80 55 28</span>
+                <br />
                 <img src={emailIcon} alt="" />
                 <span>didier.blot2014@gmail.com</span>
             </div>
             <div className="contact-information-line">
                 <span>Florence Berthelot : </span>
                 <img src={phoneIcon} alt="" />
-                <span>06 12 96 74 74</span>
+                <span>06 12 96 74 74 </span>
+                <br />
                 <img src={emailIcon} alt="" />
                 <span>florenceberthelot71@free.fr</span>
             </div>
