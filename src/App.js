@@ -6,10 +6,12 @@ import EcurieSiteScreen from './pages/EcurieSiteScreen';
 import HippodromeSiteScreen from './pages/HippodromeSiteScreen';
 import PricesScreen from './pages/PricesScreen';
 import AccessScreen from './pages/AccessScreen';
+import ScrollToTop from './ScrollToTop';
 
 function App() {
   return (
     <HashRouter basename='/'>
+      <ScrollToTop />
       <Routes>
         <Route path='/' exact element={<HomeScreen />} />
         <Route path='/ecurie' exact element={<EcurieSiteScreen />} />
@@ -18,7 +20,7 @@ function App() {
         <Route path='/access' exact element={<AccessScreen />} />
         <Route path='*' exact element={<HomeScreen />} />
       </Routes>
-    </HashRouter>
+    </HashRouter >
   );
 }
 
