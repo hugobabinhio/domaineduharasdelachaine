@@ -97,7 +97,7 @@ h2 {
   color: white;
 }
 
-.home-title h3 {
+.home-title h1 {
   font-size: 4rem;
   text-align: center;
   padding: 200px 0 0 0;
@@ -113,7 +113,7 @@ h2 {
   color: black;
 }
 
-.ecurie-title h3 {
+.ecurie-title h1 {
   font-size: 4rem;
   text-align: center;
   padding: 250px 0 0 0;
@@ -129,7 +129,7 @@ h2 {
   color: black;
 }
 
-.hippodrome-title h3 {
+.hippodrome-title h1 {
   font-size: 4rem;
   text-align: center;
   padding: 250px 0 0 0;
@@ -145,7 +145,7 @@ h2 {
   color: black;
 }
 
-.prices-title h3 {
+.prices-title h1 {
   font-size: 4rem;
   text-align: center;
   padding: 250px 0 0 0;
@@ -153,8 +153,9 @@ h2 {
   /*text-transform: uppercase;*/
 }
 
-.access-title {
+.access-title h1 {
   font-size: 4rem;
+  font-weight: normal;
   text-align: center;
   padding: 60px 0 60px 0;
   letter-spacing: 4px;
@@ -595,7 +596,7 @@ footer img {
     padding: 0 20px 20px 20px;
   }
 
-  .access-title {
+  .access-title h1 {
     padding: 20px;
   }
 

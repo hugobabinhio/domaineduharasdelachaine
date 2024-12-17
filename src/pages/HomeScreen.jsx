@@ -21,7 +21,7 @@ function HomeScreen() {
         <div>
             <HeaderMenu />
             <div className="home-title">
-                <h3>Mariages, séminaires, et autres évènements</h3>
+                <h1>Mariages, séminaires, et autres évènements</h1>
                 <div className="location">
                     <img src={locationIcon} alt="Location icon" />
                     <a href="https://maps.app.goo.gl/Mbqc2fiks8ke37BF8" target="_blank">à St Pierre des Landes</a>

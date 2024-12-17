@@ -26,7 +26,7 @@ function EcurieSiteScreen() {
         <div>
             <HeaderMenu />
             <div className="ecurie-title">
-                <h3>Le site de l'Ecurie</h3>
+                <h1>Le site de l'Ecurie</h1>
             </div>
 
             <div className="advantages">

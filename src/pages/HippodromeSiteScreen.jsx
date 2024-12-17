@@ -26,7 +26,7 @@ function HippodromeSiteScreen() {
         <div>
             <HeaderMenu />
             <div className="hippodrome-title">
-                <h3>Le site de l'Hippodrome</h3>
+                <h1>Le site de l'Hippodrome</h1>
             </div>
 
             <div className="advantages">

@@ -10,7 +10,7 @@ function PricesScreen() {
         <div>
             <HeaderMenu />
             <div className="prices-title">
-                <h3>Nos offres (2024 à 2026)</h3>
+                <h1>Nos offres (2024 à 2026)</h1>
             </div>
 
             <div className="offers-line">
