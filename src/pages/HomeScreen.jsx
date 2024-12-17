@@ -99,13 +99,13 @@ function HomeScreen() {
                     <span>
                         - le site de <strong>l'Ecurie</strong>, avec sa salle de réception (<strong>140 convives</strong>)
                         et ses hébergements (<strong>42 couchages</strong>).&nbsp;
-                        <a href="./ecurie">En savoir plus</a>
+                        <a href="/ecurie">En savoir plus</a>
                         <br />
                     </span>
                     <span>
                         - le site de <strong>l'Hippodrome</strong>, avec sa salle de réception (<strong>280
                             convives</strong>) et ses hébergements (<strong>85 couchages</strong>).&nbsp;
-                        <a href="./hippodrome">En savoir plus</a>
+                        <a href="/hippodrome">En savoir plus</a>
                     </span>
                 </p>
             </div>
