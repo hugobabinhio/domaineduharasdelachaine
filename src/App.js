@@ -1,5 +1,5 @@
 import React from 'react';
-import { Routes, Route, HashRouter } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
 import HomeScreen from './pages/HomeScreen';
 import EcurieSiteScreen from './pages/EcurieSiteScreen';
@@ -10,7 +10,7 @@ import ScrollToTop from './ScrollToTop';
 
 function App() {
   return (
-    <HashRouter basename='/'>
+    <BrowserRouter basename='/'>
       <ScrollToTop />
       <Routes>
         <Route path='/' exact element={<HomeScreen />} />
@@ -20,7 +20,7 @@ function App() {
         <Route path='/access' exact element={<AccessScreen />} />
         <Route path='*' exact element={<HomeScreen />} />
       </Routes>
-    </HashRouter >
+    </BrowserRouter  >
   );
 }
 
