@@ -8,18 +8,20 @@ import terraceIcon from '../assets/images/icons/terrace_icon.png'
 import hippodromeEmptyRoomPhoto from '../assets/images/hippodrome_empty_room_poho.jpg'
 import hippodromeRoomPhoto from '../assets/images/hippodrome_room_photo.jpg'
 import hippodromeRoomWindowsPhoto from '../assets/images/hippodrome_room_windows_photo.jpeg'
-import manoirBeforeCeremonyPhoto from '../assets/images/manoir_before_ceremony.png'
-import manoirBuildingsPhoto from '../assets/images/manoir_buildings_photo.jpg'
-import manoirOutsidePhoto from '../assets/images/manoir_outside_photo.jpg'
-import manoirSunPhoto from '../assets/images/manoir_sun_photo.jpg'
-import paddockOutsidePhoto from '../assets/images/paddock_outside_photo.jfif'
-import purSangHousePhoto from '../assets/images/pur_sang_house_photo.jpg'
-import purSangRoomPhoto from '../assets/images/pur_sang_room_photo.jpg'
-import sellerieHousePhoto from '../assets/images/sellerie_house_photo.jpg'
-import sellerieRoomPhoto from '../assets/images/sellerie_room_photo.jpg'
+import coventryBuildings from '../assets/images/photos/coventry_manor/coventry_buildings.jpg'
+import coventryCeremony from '../assets/images/photos/coventry_manor/coventry_ceremony.png'
+import coventryOutside from '../assets/images/photos/coventry_manor/coventry_outside.jpg'
+import coventrySun from '../assets/images/photos/coventry_manor/coventry_sun.jpg'
+import paddockHome from '../assets/images/photos/paddock/paddock_home.jfif'
+import purSangHome from '../assets/images/photos/pur_sang/pur_sang_home.jpg'
+import purSangRoom from '../assets/images/photos/pur_sang/pur_sang_room.jpg'
+import sellerieHome from '../assets/images/photos/sellerie/sellerie_home.jpg'
+import sellerieRoom from '../assets/images/photos/sellerie/sellerie_room.jpg'
 import ContactFooter from '../components/ContactFooter'
 import HeaderMenu from "../components/HeaderMenu"
 import ImagesCarousel from '../components/ImagesCarousel'
+import hippodromeHallWithTables from '../assets/images/photos/hippodrome_hall/hall_with_tables.jpeg'
+import hippodromeHeightDecorations from '../assets/images/photos/hippodrome_hall/height_decorations.jpeg'
 
 function HippodromeSiteScreen() {
     return (
@@ -77,7 +79,7 @@ function HippodromeSiteScreen() {
                         Elle est accessible et équipée pour les personnes à mobilité réduite.
                     </span>
                 </p>
-                <ImagesCarousel images={[hippodromeRoomPhoto, hippodromeRoomWindowsPhoto, hippodromeEmptyRoomPhoto]}></ImagesCarousel>
+                <ImagesCarousel images={[hippodromeHallWithTables, hippodromeRoomPhoto, hippodromeRoomWindowsPhoto, hippodromeHeightDecorations, hippodromeEmptyRoomPhoto]}></ImagesCarousel>
             </div>
 
             <div className="summary-block">
@@ -98,7 +100,7 @@ function HippodromeSiteScreen() {
             </div>
 
             <div className="information-block odd-section">
-                <ImagesCarousel images={[manoirOutsidePhoto, manoirSunPhoto, manoirBuildingsPhoto, manoirBeforeCeremonyPhoto]}></ImagesCarousel>
+                <ImagesCarousel images={[coventryOutside, coventrySun, coventryBuildings, coventryCeremony]}></ImagesCarousel>
                 <p className="left-separator">
                     <span className="information-block-title">
                         Le Manoir Coventry
@@ -126,11 +128,11 @@ function HippodromeSiteScreen() {
                         Situé à deux pas de la salle de réception de l'Hippodrome, le Pur Sang est composé de <strong>19 couchages</strong>.
                     </span>
                 </p>
-                <ImagesCarousel images={[purSangRoomPhoto, purSangHousePhoto]}></ImagesCarousel>
+                <ImagesCarousel images={[purSangRoom, purSangHome]}></ImagesCarousel>
             </div>
 
             <div className="information-block odd-section">
-                <ImagesCarousel images={[sellerieHousePhoto, sellerieRoomPhoto]}></ImagesCarousel>
+                <ImagesCarousel images={[sellerieHome, sellerieRoom]}></ImagesCarousel>
                 <p className="left-separator">
                     <span className="information-block-title">
                         La Sellerie
@@ -143,7 +145,7 @@ function HippodromeSiteScreen() {
             </div>
 
             <div className="information-block">
-                <ImagesCarousel images={[paddockOutsidePhoto]}></ImagesCarousel>
+                <ImagesCarousel images={[paddockHome]}></ImagesCarousel>
                 <p className="left-separator">
                     <span className="information-block-title">
                         Le Paddock
