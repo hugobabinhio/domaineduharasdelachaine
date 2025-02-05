@@ -2,21 +2,6 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Photo format
-
-ECURIE
-hall : 2048 x 1365 soit 66%  1/1,5
-
-LADS
-blue room : 1529 x 1480 soit 96,7%
-
-JOCKEY
-3024 x 4032 soit 1/0,75
-
-COVENTRY
-4160 x 3120 soit 1/0,75
-
-
 ## Available Scripts
 
 In the project directory, you can run:
