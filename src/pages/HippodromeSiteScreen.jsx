@@ -75,7 +75,7 @@ function HippodromeSiteScreen() {
                         Elle dispose d'une <strong>cuisine professionnelle</strong> et d'une <strong>terrasse</strong> orientée plein sud.
                     </span>
                     <span>
-                        Elle est accessible et équipée pour les personnes à mobilité réduite.
+                        Elle est <strong>accessible</strong> et équipée pour les personnes à mobilité réduite.
                     </span>
                 </p>
                 <ImagesCarousel images={[hippodromeHallTables, hippodromeRoomPhoto, hippodromeRoomWindowsPhoto, hippodromeEmptyRoomPhoto]}></ImagesCarousel>
