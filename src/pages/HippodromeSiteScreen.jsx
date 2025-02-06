@@ -6,6 +6,7 @@ import sleepingIcon from '../assets/images/icons/sleeping_icon.png'
 import tennisIcon from '../assets/images/icons/tennis_icon.png'
 import terraceIcon from '../assets/images/icons/terrace_icon.png'
 import hippodromeEmptyRoomPhoto from '../assets/images/hippodrome_empty_room_poho.jpg'
+import hippodromeHallTables from '../assets/images/hippodrome_hall_tables.jpeg'
 import hippodromeRoomPhoto from '../assets/images/hippodrome_room_photo.jpg'
 import hippodromeRoomWindowsPhoto from '../assets/images/hippodrome_room_windows_photo.jpeg'
 import manoirBeforeCeremonyPhoto from '../assets/images/manoir_before_ceremony.png'
@@ -77,7 +78,7 @@ function HippodromeSiteScreen() {
                         Elle est accessible et équipée pour les personnes à mobilité réduite.
                     </span>
                 </p>
-                <ImagesCarousel images={[hippodromeRoomPhoto, hippodromeRoomWindowsPhoto, hippodromeEmptyRoomPhoto]}></ImagesCarousel>
+                <ImagesCarousel images={[hippodromeHallTables, hippodromeRoomPhoto, hippodromeRoomWindowsPhoto, hippodromeEmptyRoomPhoto]}></ImagesCarousel>
             </div>
 
             <div className="summary-block">
