@@ -7,16 +7,20 @@ import ecurieOutsideNight from '../assets/images/photos/ecurie_hall/ecurie_build
 import ecurieCeremony from '../assets/images/photos/ecurie_hall/ecurie_ceremony.jpeg'
 import ecurieHall from '../assets/images/photos/ecurie_hall/ecurie_hall.jpg'
 import ecurieOutsideSun from '../assets/images/photos/ecurie_hall/ecurie_outside_sun.png'
+import etrierBathroom from '../assets/images/photos/etrier/etrier_bathroom.jpeg'
+import etrierHome from '../assets/images/photos/etrier/etrier_home.jpeg'
+import etrierKitchen from '../assets/images/photos/etrier/etrier_kitchen.jpeg'
+import etrierNature from '../assets/images/photos/etrier/etrier_nature.jpeg'
+import etrierRoom from '../assets/images/photos/etrier/etrier_room.jpeg'
 import ladsBlueRoom from '../assets/images/photos/lads_house/lads_blue_room.jpg'
 import ladsGreenRoom from '../assets/images/photos/lads_house/lads_green_room.jpg'
 import ladsHallway from '../assets/images/photos/lads_house/lads_hallway.jpg'
 import ladsHome from '../assets/images/photos/lads_house/lads_home.jpg'
-import etrierBuilding from '../assets/images/photos/etrier_house/etrier_building.jpeg'
-import etrierLonge from '../assets/images/photos/etrier_house/etrier_lounge.jpg'
-import jockeyHome from '../assets/images/photos/jockey_house/jockey_home.jpeg'
-import jockeyLivingRoom from '../assets/images/photos/jockey_house/jockey_living_room.jpeg'
-import jockeyOutside from '../assets/images/photos/jockey_house//jockey_outside.jpg'
-import jockeyVeranda from '../assets/images/photos/jockey_house/jockey_veranda.jpeg'
+import jockeyHome from '../assets/images/photos/jockey/jockey_home.jpeg'
+import jockeyLivingRoom from '../assets/images/photos/jockey/jockey_living_room.jpeg'
+import jockeyOutside from '../assets/images/photos/jockey//jockey_outside.jpg'
+import jockeyRoom from '../assets/images/photos/jockey/jockey_room.jpeg'
+import jockeyVeranda from '../assets/images/photos/jockey/jockey_veranda.jpeg'
 import palfrenierHome from '../assets/images/photos/palfrenier_house/palfrenier_home.jpeg'
 import palfrenierKitchen from '../assets/images/photos/palfrenier_house/palfrenier_kitchen.jpeg'
 import palfrenierLivingRoom from '../assets/images/photos/palfrenier_house/palfrenier_living_room.jpeg'
@@ -99,7 +103,7 @@ function EcurieSiteScreen() {
                         La Maison de l'Etrier se situe à 950m de la salle de réception de l'Ecurie et dispose de <strong>14 couchages</strong>.
                     </span>
                 </p>
-                <ImagesCarousel images={[etrierBuilding, etrierLonge]}></ImagesCarousel>
+                <ImagesCarousel images={[etrierRoom, etrierHome, etrierBathroom, etrierKitchen, etrierNature]}></ImagesCarousel>
             </div>
 
             <div className="information-block">
@@ -132,7 +136,7 @@ function EcurieSiteScreen() {
             </div>
 
             <div className="information-block">
-                <ImagesCarousel images={[jockeyHome, jockeyVeranda, jockeyLivingRoom, jockeyOutside]}></ImagesCarousel>
+                <ImagesCarousel images={[jockeyHome, jockeyRoom, jockeyVeranda, jockeyLivingRoom, jockeyOutside]}></ImagesCarousel>
                 <p className="left-separator">
                     <span className="information-block-title">
                         La maison du jockey
