@@ -444,6 +444,23 @@ footer img {
   display: none;
 }
 
+.social-networks-line {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+  padding-top: 10px;
+}
+
+.social-networks-line a {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.social-networks-line img {
+  max-block-size: 45px;
+}
+
 /**** TRANSVERSE ****/
 
 .legend-section {
