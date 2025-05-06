@@ -10,7 +10,7 @@ function PricesScreen() {
         <div>
             <HeaderMenu />
             <div className="prices-title">
-                <h1>Nos offres (2024 à 2026)</h1>
+                <h1>Nos offres (2025 à 2026)</h1>
             </div>
 
             <div className="offers-line">
@@ -55,7 +55,7 @@ function PricesScreen() {
                 </div>
             </div>
             <div className="legend-section">
-                <strong>*</strong> Nous nous réservons le droit de modifier les tarifs pour l'année <strong>2026</strong>.
+                <strong>*</strong> Nous nous réservons le droit de modifier les tarifs pour l'année <strong>2027</strong>.
             </div>
 
             <ContactFooter />
