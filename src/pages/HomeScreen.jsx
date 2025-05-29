@@ -16,6 +16,7 @@ import seminarPhoto from '../assets/images/seminar_photo.png'
 import themePartyPhoto from '../assets/images/theme_party_photo.png'
 import HeaderMenu from "../components/HeaderMenu"
 import ContactFooter from "../components/ContactFooter"
+import { MARIAGE_NET_URL } from "../constants";
 
 function HomeScreen() {
     return (
@@ -145,7 +146,9 @@ function HomeScreen() {
                     <img src={opinionBadge} alt="" />
                 </div>
                 <div className="customer-feedback">
-                    <img src={customersFeedbackPhoto} alt="" />
+                    <a href={MARIAGE_NET_URL}>
+                        <img src={customersFeedbackPhoto} alt="" />
+                    </a>
                 </div>
             </div>
 
