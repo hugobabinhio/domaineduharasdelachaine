@@ -1,4 +1,3 @@
-import React from "react"
 import { Link } from "react-router-dom";
 import opinionBadge from '../assets/images/opinion_badge.png'
 import weddingAwardBadge from '../assets/images/wedding_awards_badge.jpg'
@@ -9,7 +8,7 @@ import roomIcon from '../assets/images/icons/room_icon.png'
 import sleepingIcon from '../assets/images/icons/sleeping_icon.png'
 import locationIcon from '../assets/images/icons/location_icon.png'
 import cateringPhoto from '../assets/images/catering_photo.jpg'
-import customersFeedbackPhoto from '../assets/images/customers_feedback_photo.png'
+import customersFeedback from '../assets/images/customers_feedback.png'
 import domainOutsidePhoto from '../assets/images/domain_outside.jpg'
 import mariagePhoto from '../assets/images/mariage_photo.jpg'
 import seminarPhoto from '../assets/images/seminar_photo.png'
@@ -147,7 +146,7 @@ function HomeScreen() {
                 </div>
                 <div className="customer-feedback">
                     <a href={MARIAGE_NET_URL}>
-                        <img src={customersFeedbackPhoto} alt="" />
+                        <img src={customersFeedback} alt="" />
                     </a>
                 </div>
             </div>
