@@ -112,8 +112,7 @@ function HippodromeSiteScreen() {
                     </span>
                     <br />
                     <span>
-                        Pour vos <strong>loisirs</strong>, vous disposerez de terrains de tennis, de football, de basket,
-                        ainsi que d'une table de tennis de table.
+                        Pour vos <strong>loisirs</strong> vous disposerez d'un terrain de football.
                     </span>
                 </p>
             </div>
