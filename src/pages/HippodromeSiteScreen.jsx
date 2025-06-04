@@ -9,6 +9,8 @@ import hippodromeEmptyRoomPhoto from '../assets/images/hippodrome_empty_room_poh
 import hippodromeRoomPhoto from '../assets/images/hippodrome_room_photo.jpg'
 import hippodromeRoomWindowsPhoto from '../assets/images/hippodrome_room_windows_photo.jpeg'
 import coventryBuildings from '../assets/images/photos/coventry/coventry_buildings.jpg'
+import coventryBuildingFaceSunny from '../assets/images/photos/coventry/building_face_sunny.jfif'
+import coventryVerySunny from '../assets/images/photos/coventry/building_very_sunny.jfif'
 import coventryCeremony from '../assets/images/photos/coventry/coventry_ceremony.png'
 import coventryOutside from '../assets/images/photos/coventry/coventry_outside.jpg'
 import coventrySun from '../assets/images/photos/coventry/coventry_sun.jpg'
@@ -20,8 +22,11 @@ import sellerieRoom from '../assets/images/photos/sellerie/sellerie_room.jpg'
 import ContactFooter from '../components/ContactFooter'
 import HeaderMenu from "../components/HeaderMenu"
 import ImagesCarousel from '../components/ImagesCarousel'
+import hippodromeMarquee from '../assets/images/photos/hippodrome_hall/marquee.jfif'
 import hippodromeHallWithTables from '../assets/images/photos/hippodrome_hall/hall_with_tables.jpeg'
 import hippodromeHeightDecorations from '../assets/images/photos/hippodrome_hall/height_decorations.jpeg'
+import hippodromeTerrace from '../assets/images/photos/hippodrome_hall/hippodrome_terrace.jfif'
+import hippodromeTerraceWithTrees from '../assets/images/photos/hippodrome_hall/terrace_with_trees.jfif'
 
 function HippodromeSiteScreen() {
     return (
@@ -79,7 +84,7 @@ function HippodromeSiteScreen() {
                         Elle est <strong>accessible</strong> et équipée pour les personnes à mobilité réduite.
                     </span>
                 </p>
-                <ImagesCarousel images={[hippodromeHallWithTables, hippodromeRoomPhoto, hippodromeRoomWindowsPhoto, hippodromeHeightDecorations, hippodromeEmptyRoomPhoto]}></ImagesCarousel>
+                <ImagesCarousel images={[hippodromeHallWithTables, hippodromeRoomPhoto, hippodromeTerrace, hippodromeTerraceWithTrees, hippodromeRoomWindowsPhoto, hippodromeHeightDecorations, hippodromeEmptyRoomPhoto, hippodromeMarquee]}></ImagesCarousel>
             </div>
 
             <div className="summary-block">
@@ -100,7 +105,7 @@ function HippodromeSiteScreen() {
             </div>
 
             <div className="information-block odd-section">
-                <ImagesCarousel images={[coventryOutside, coventrySun, coventryBuildings, coventryCeremony]}></ImagesCarousel>
+                <ImagesCarousel images={[coventryVerySunny, coventryBuildingFaceSunny, coventryOutside, coventrySun, coventryBuildings, coventryCeremony]}></ImagesCarousel>
                 <p className="left-separator">
                     <span className="information-block-title">
                         Le Manoir Coventry
