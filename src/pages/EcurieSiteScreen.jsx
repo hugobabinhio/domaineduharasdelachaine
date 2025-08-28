@@ -1,12 +1,8 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import pmrAccessIcon from '../assets/images/icons/pmr_access_icon.png'
 import receptionRoomIcon from '../assets/images/icons/reception_room_icon.png'
 import sleepingIcon from '../assets/images/icons/sleeping_icon.png'
 import terraceIcon from '../assets/images/icons/terrace_icon.png'
-import ecurieOutsideNight from '../assets/images/photos/ecurie_hall/ecurie_building_night.jpg'
-import ecurieCeremony from '../assets/images/photos/ecurie_hall/ecurie_ceremony.jpeg'
-import ecurieHall from '../assets/images/photos/ecurie_hall/ecurie_hall.jpg'
-import ecurieOutsideSun from '../assets/images/photos/ecurie_hall/ecurie_outside_sun.png'
 import etrierBathroom from '../assets/images/photos/etrier/etrier_bathroom.jpeg'
 import etrierHome from '../assets/images/photos/etrier/etrier_home.jpeg'
 import etrierKitchen from '../assets/images/photos/etrier/etrier_kitchen.jpeg'
@@ -16,11 +12,6 @@ import ladsBlueRoom from '../assets/images/photos/lads_house/lads_blue_room.jpg'
 import ladsGreenRoom from '../assets/images/photos/lads_house/lads_green_room.jpg'
 import ladsHallway from '../assets/images/photos/lads_house/lads_hallway.jpg'
 import ladsHome from '../assets/images/photos/lads_house/lads_home.jpg'
-import jockeyHome from '../assets/images/photos/jockey/jockey_home.jpeg'
-import jockeyLivingRoom from '../assets/images/photos/jockey/jockey_living_room.jpeg'
-import jockeyOutside from '../assets/images/photos/jockey//jockey_outside.jpg'
-import jockeyRoom from '../assets/images/photos/jockey/jockey_room.jpeg'
-import jockeyVeranda from '../assets/images/photos/jockey/jockey_veranda.jpeg'
 import palfrenierHome from '../assets/images/photos/palfrenier_house/palfrenier_home.jpeg'
 import palfrenierKitchen from '../assets/images/photos/palfrenier_house/palfrenier_kitchen.jpeg'
 import palfrenierLivingRoom from '../assets/images/photos/palfrenier_house/palfrenier_living_room.jpeg'
@@ -29,7 +20,38 @@ import ContactFooter from '../components/ContactFooter'
 import HeaderMenu from '../components/HeaderMenu'
 import ImagesCarousel from '../components/ImagesCarousel'
 
+import client from '../sanityClient'
+
 function EcurieSiteScreen() {
+    const [gallerySalleEcurie, setGallerySalleEcurie] = useState([])
+    const [galleryMaisonJockey, setGalleryMaisonJockey] = useState([])
+
+    useEffect(() => {
+        client
+            .fetch(`*[_type == "gallery" && title == "Salle Ecurie"][0]{
+      photos[]{asset->{url}}
+    }`)
+            .then((data) => {
+                if (data?.photos) {
+                    // Extract URLs only
+                    const urls = data.photos.map((p) => p.asset.url)
+                    setGallerySalleEcurie(urls)
+                }
+            })
+    }, [])
+    useEffect(() => {
+        client
+            .fetch(`*[_type == "gallery" && title == "La Maison du Jockey"][0]{
+      photos[]{asset->{url}}
+    }`)
+            .then((data) => {
+                if (data?.photos) {
+                    const urls = data.photos.map((p) => p.asset.url)
+                    setGalleryMaisonJockey(urls)
+                }
+            })
+    }, [])
+
     return (
         <div>
             <HeaderMenu />
@@ -57,7 +79,7 @@ function EcurieSiteScreen() {
             </div>
 
             <div className="information-block odd-section">
-                <ImagesCarousel images={[ecurieHall, ecurieCeremony, ecurieOutsideNight, ecurieOutsideSun]}></ImagesCarousel>
+                <ImagesCarousel images={gallerySalleEcurie} />
                 <p className="left-separator">
                     <span className="information-block-title">
                         La salle de réception
@@ -136,7 +158,9 @@ function EcurieSiteScreen() {
             </div>
 
             <div className="information-block">
-                <ImagesCarousel images={[jockeyHome, jockeyRoom, jockeyVeranda, jockeyLivingRoom, jockeyOutside]}></ImagesCarousel>
+
+                <ImagesCarousel images={galleryMaisonJockey} />
+
                 <p className="left-separator">
                     <span className="information-block-title">
                         La maison du jockey
