@@ -1,34 +1,118 @@
-import React from "react"
+import React, { useState, useEffect } from "react";
 import marqueeIcon from '../assets/images/icons/marquee_icon.png'
 import pmrAccessIcon from '../assets/images/icons/pmr_access_icon.png'
 import receptionRoomIcon from '../assets/images/icons/reception_room_icon.png'
 import sleepingIcon from '../assets/images/icons/sleeping_icon.png'
 import tennisIcon from '../assets/images/icons/tennis_icon.png'
 import terraceIcon from '../assets/images/icons/terrace_icon.png'
-import hippodromeEmptyRoomPhoto from '../assets/images/hippodrome_empty_room_poho.jpg'
-import hippodromeRoomPhoto from '../assets/images/hippodrome_room_photo.jpg'
-import hippodromeRoomWindowsPhoto from '../assets/images/hippodrome_room_windows_photo.jpeg'
-import coventryBuildings from '../assets/images/photos/coventry/coventry_buildings.jpg'
-import coventryBuildingFaceSunny from '../assets/images/photos/coventry/building_face_sunny.jfif'
-import coventryVerySunny from '../assets/images/photos/coventry/building_very_sunny.jfif'
-import coventryCeremony from '../assets/images/photos/coventry/coventry_ceremony.png'
-import coventryOutside from '../assets/images/photos/coventry/coventry_outside.jpg'
-import coventrySun from '../assets/images/photos/coventry/coventry_sun.jpg'
-import paddockHome from '../assets/images/photos/paddock/paddock_home.jfif'
-import purSangHome from '../assets/images/photos/pur_sang/pur_sang_home.jpg'
-import purSangRoom from '../assets/images/photos/pur_sang/pur_sang_room.jpg'
-import sellerieHome from '../assets/images/photos/sellerie/sellerie_home.jpg'
-import sellerieRoom from '../assets/images/photos/sellerie/sellerie_room.jpg'
 import ContactFooter from '../components/ContactFooter'
 import HeaderMenu from "../components/HeaderMenu"
 import ImagesCarousel from '../components/ImagesCarousel'
-import hippodromeMarquee from '../assets/images/photos/hippodrome_hall/marquee.jfif'
-import hippodromeHallWithTables from '../assets/images/photos/hippodrome_hall/hall_with_tables.jpeg'
-import hippodromeHeightDecorations from '../assets/images/photos/hippodrome_hall/height_decorations.jpeg'
-import hippodromeTerrace from '../assets/images/photos/hippodrome_hall/hippodrome_terrace.jfif'
-import hippodromeTerraceWithTrees from '../assets/images/photos/hippodrome_hall/terrace_with_trees.jfif'
+import client from '../sanityClient'
 
 function HippodromeSiteScreen() {
+    const [gallerySalleHippodrome, setGallerySalleHippodrome] = useState([])
+    const [galleryManoirCoventry, setGalleryManoirCoventry] = useState([])
+    const [galleryPurSang, setGalleryPurSang] = useState([])
+    const [gallerySellerie, setGallerySellerie] = useState([])
+    const [galleryPaddock, setGalleryPaddock] = useState([])
+
+    useEffect(() => {
+        client
+            .fetch(`*[_type == "gallery" && title == "Salle Hippodrome"][0]{
+      photos[]{asset->{url}}
+    }`)
+            .then((data) => {
+                if (data?.photos) {
+                    const urls = data.photos.map((p) => ({
+                        key: p._key,
+                        url: p.asset.url,
+                    }))
+                    setGallerySalleHippodrome(urls)
+                }
+            })
+    }, [])
+
+    useEffect(() => {
+        client
+            .fetch(`*[_type == "gallery" && title == "Le Manoir Coventry"][0]{
+      photos[]{asset->{url}}
+    }`)
+            .then((data) => {
+                if (data?.photos) {
+                    const urls = data.photos.map((p) => ({
+                        key: p._key,
+                        url: p.asset.url,
+                    }))
+                    setGalleryManoirCoventry(urls)
+                }
+            })
+    }, [])
+
+    useEffect(() => {
+        client
+            .fetch(`*[_type == "gallery" && title == "Le Pur Sang"][0]{
+      photos[]{asset->{url}}
+    }`)
+            .then((data) => {
+                if (data?.photos) {
+                    const urls = data.photos.map((p) => ({
+                        key: p._key,
+                        url: p.asset.url,
+                    }))
+                    setGalleryPurSang(urls)
+                }
+            })
+    }, [])
+
+    useEffect(() => {
+        client
+            .fetch(`*[_type == "gallery" && title == "Le Pur Sang"][0]{
+      photos[]{asset->{url}}
+    }`)
+            .then((data) => {
+                if (data?.photos) {
+                    const urls = data.photos.map((p) => ({
+                        key: p._key,
+                        url: p.asset.url,
+                    }))
+                    setGalleryPurSang(urls)
+                }
+            })
+    }, [])
+
+    useEffect(() => {
+        client
+            .fetch(`*[_type == "gallery" && title == "La Sellerie"][0]{
+      photos[]{asset->{url}}
+    }`)
+            .then((data) => {
+                if (data?.photos) {
+                    const urls = data.photos.map((p) => ({
+                        key: p._key,
+                        url: p.asset.url,
+                    }))
+                    setGallerySellerie(urls)
+                }
+            })
+    }, [])
+
+    useEffect(() => {
+        client
+            .fetch(`*[_type == "gallery" && title == "Le Paddock"][0]{
+      photos[]{asset->{url}}
+    }`)
+            .then((data) => {
+                if (data?.photos) {
+                    const urls = data.photos.map((p) => ({
+                        key: p._key,
+                        url: p.asset.url,
+                    }))
+                    setGalleryPaddock(urls)
+                }
+            })
+    }, [])
+
     return (
         <div>
             <HeaderMenu />
@@ -84,7 +168,7 @@ function HippodromeSiteScreen() {
                         Elle est <strong>accessible</strong> et équipée pour les personnes à mobilité réduite.
                     </span>
                 </p>
-                <ImagesCarousel images={[hippodromeHallWithTables, hippodromeRoomPhoto, hippodromeTerrace, hippodromeTerraceWithTrees, hippodromeRoomWindowsPhoto, hippodromeHeightDecorations, hippodromeEmptyRoomPhoto, hippodromeMarquee]}></ImagesCarousel>
+                <ImagesCarousel images={gallerySalleHippodrome} />
             </div>
 
             <div className="summary-block">
@@ -105,7 +189,7 @@ function HippodromeSiteScreen() {
             </div>
 
             <div className="information-block odd-section">
-                <ImagesCarousel images={[coventryVerySunny, coventryBuildingFaceSunny, coventryOutside, coventrySun, coventryBuildings, coventryCeremony]}></ImagesCarousel>
+                <ImagesCarousel images={galleryManoirCoventry} />
                 <p className="left-separator">
                     <span className="information-block-title">
                         Le Manoir Coventry
@@ -132,11 +216,11 @@ function HippodromeSiteScreen() {
                         Situé à deux pas de la salle de réception de l'Hippodrome, le Pur Sang est composé de <strong>19 couchages</strong>.
                     </span>
                 </p>
-                <ImagesCarousel images={[purSangRoom, purSangHome]}></ImagesCarousel>
+                <ImagesCarousel images={galleryPurSang} />
             </div>
 
             <div className="information-block odd-section">
-                <ImagesCarousel images={[sellerieHome, sellerieRoom]}></ImagesCarousel>
+                <ImagesCarousel images={gallerySellerie} />
                 <p className="left-separator">
                     <span className="information-block-title">
                         La Sellerie
@@ -149,8 +233,7 @@ function HippodromeSiteScreen() {
             </div>
 
             <div className="information-block">
-                <ImagesCarousel images={[paddockHome]}></ImagesCarousel>
-                <p className="left-separator">
+                <p className="right-separator">
                     <span className="information-block-title">
                         Le Paddock
                     </span>
@@ -159,6 +242,7 @@ function HippodromeSiteScreen() {
                         Rénové tout récemment, ce bâtiment offre <strong>10 couchages</strong> additionnels.
                     </span>
                 </p>
+                <ImagesCarousel images={galleryPaddock} />
             </div>
             <ContactFooter />
         </div>

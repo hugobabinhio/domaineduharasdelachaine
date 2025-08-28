@@ -3,19 +3,6 @@ import pmrAccessIcon from '../assets/images/icons/pmr_access_icon.png'
 import receptionRoomIcon from '../assets/images/icons/reception_room_icon.png'
 import sleepingIcon from '../assets/images/icons/sleeping_icon.png'
 import terraceIcon from '../assets/images/icons/terrace_icon.png'
-import etrierBathroom from '../assets/images/photos/etrier/etrier_bathroom.jpeg'
-import etrierHome from '../assets/images/photos/etrier/etrier_home.jpeg'
-import etrierKitchen from '../assets/images/photos/etrier/etrier_kitchen.jpeg'
-import etrierNature from '../assets/images/photos/etrier/etrier_nature.jpeg'
-import etrierRoom from '../assets/images/photos/etrier/etrier_room.jpeg'
-import ladsBlueRoom from '../assets/images/photos/lads_house/lads_blue_room.jpg'
-import ladsGreenRoom from '../assets/images/photos/lads_house/lads_green_room.jpg'
-import ladsHallway from '../assets/images/photos/lads_house/lads_hallway.jpg'
-import ladsHome from '../assets/images/photos/lads_house/lads_home.jpg'
-import palfrenierHome from '../assets/images/photos/palfrenier_house/palfrenier_home.jpeg'
-import palfrenierKitchen from '../assets/images/photos/palfrenier_house/palfrenier_kitchen.jpeg'
-import palfrenierLivingRoom from '../assets/images/photos/palfrenier_house/palfrenier_living_room.jpeg'
-
 import ContactFooter from '../components/ContactFooter'
 import HeaderMenu from '../components/HeaderMenu'
 import ImagesCarousel from '../components/ImagesCarousel'
@@ -24,6 +11,9 @@ import client from '../sanityClient'
 
 function EcurieSiteScreen() {
     const [gallerySalleEcurie, setGallerySalleEcurie] = useState([])
+    const [galleryMaisonEtrier, setGalleryMaisonEtrier] = useState([])
+    const [galleryMaisonLads, setGalleryMaisonLads] = useState([])
+    const [galleryMaisonPalfrenier, setGalleryMaisonPalfrenier] = useState([])
     const [galleryMaisonJockey, setGalleryMaisonJockey] = useState([])
 
     useEffect(() => {
@@ -33,9 +23,56 @@ function EcurieSiteScreen() {
     }`)
             .then((data) => {
                 if (data?.photos) {
-                    // Extract URLs only
-                    const urls = data.photos.map((p) => p.asset.url)
+                    const urls = data.photos.map((p) => ({
+                        key: p._key,
+                        url: p.asset.url,
+                    }))
                     setGallerySalleEcurie(urls)
+                }
+            })
+    }, [])
+    useEffect(() => {
+        client
+            .fetch(`*[_type == "gallery" && title == "La Maison de l'Etrier"][0]{
+      photos[]{asset->{url}}
+    }`)
+            .then((data) => {
+                if (data?.photos) {
+                    const urls = data.photos.map((p) => ({
+                        key: p._key,
+                        url: p.asset.url,
+                    }))
+                    setGalleryMaisonEtrier(urls)
+                }
+            })
+    }, [])
+    useEffect(() => {
+        client
+            .fetch(`*[_type == "gallery" && title == "La Maison des Lads"][0]{
+      photos[]{asset->{url}}
+    }`)
+            .then((data) => {
+                if (data?.photos) {
+                    const urls = data.photos.map((p) => ({
+                        key: p._key,
+                        url: p.asset.url,
+                    }))
+                    setGalleryMaisonLads(urls)
+                }
+            })
+    }, [])
+    useEffect(() => {
+        client
+            .fetch(`*[_type == "gallery" && title == "La Maison du Palfrenier"][0]{
+      photos[]{asset->{url}}
+    }`)
+            .then((data) => {
+                if (data?.photos) {
+                    const urls = data.photos.map((p) => ({
+                        key: p._key,
+                        url: p.asset.url,
+                    }))
+                    setGalleryMaisonPalfrenier(urls)
                 }
             })
     }, [])
@@ -46,11 +83,15 @@ function EcurieSiteScreen() {
     }`)
             .then((data) => {
                 if (data?.photos) {
-                    const urls = data.photos.map((p) => p.asset.url)
+                    const urls = data.photos.map((p) => ({
+                        key: p._key,
+                        url: p.asset.url,
+                    }))
                     setGalleryMaisonJockey(urls)
                 }
             })
     }, [])
+
 
     return (
         <div>
@@ -125,11 +166,11 @@ function EcurieSiteScreen() {
                         La Maison de l'Etrier se situe à 950m de la salle de réception de l'Ecurie et dispose de <strong>14 couchages</strong>.
                     </span>
                 </p>
-                <ImagesCarousel images={[etrierRoom, etrierHome, etrierBathroom, etrierKitchen, etrierNature]}></ImagesCarousel>
+                <ImagesCarousel images={galleryMaisonEtrier} />
             </div>
 
             <div className="information-block">
-                <ImagesCarousel images={[ladsGreenRoom, ladsBlueRoom, ladsHome, ladsHallway]}></ImagesCarousel>
+                <ImagesCarousel images={galleryMaisonLads} />
                 <p className="left-separator">
                     <span className="information-block-title">
                         La maison des Lads
@@ -154,7 +195,7 @@ function EcurieSiteScreen() {
                         Elle vous offre toutes les commodités : cuisine équipée, 3 chambres, pour un total de <strong>9 couchages</strong>.
                     </span>
                 </p>
-                <ImagesCarousel images={[palfrenierHome, palfrenierKitchen, palfrenierLivingRoom]}></ImagesCarousel>
+                <ImagesCarousel images={galleryMaisonPalfrenier} />
             </div>
 
             <div className="information-block">

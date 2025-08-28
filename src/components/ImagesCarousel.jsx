@@ -5,6 +5,7 @@ import "./ImagesCarousel.css"
 
 function ImagesCarousel({ images }) {
     /* 
+        selectedItem={0} : démarre toujours sur la première slide
         autoPlay : fait défiler automatiquement les images
         interval : nombre de sdcondes entre les images lors du défilement
         infiniteLoop : continue le défilement même lorsqu'il est arrivé à la dernière image
@@ -13,9 +14,15 @@ function ImagesCarousel({ images }) {
         showStatus : indicateur du nombre d'images en haut à droite (ex : 1 sur 3)
     */
 
+    // Si les images ne sont pas encore là → rien à afficher
+    if (!images || images.length === 0) {
+        return <p>Chargement des photos...</p>
+    }
+
     return (
         <div className="carousel-block">
             <Carousel
+                selectedItem={0}
                 autoPlay={false}
                 interval={6000}
                 infiniteLoop={true}
@@ -24,8 +31,8 @@ function ImagesCarousel({ images }) {
                 showStatus={false}
             >
                 {images.map(slide => (
-                    <div >
-                        <img src={slide} alt="" />
+                    <div key={slide.key}>
+                        <img src={slide.url} alt="" />
                     </div>
                 ))}
             </Carousel>
