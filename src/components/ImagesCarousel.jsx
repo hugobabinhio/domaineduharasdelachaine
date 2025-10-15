@@ -30,9 +30,12 @@ function ImagesCarousel({ images }) {
                 showIndicators={false}
                 showStatus={false}
             >
-                {images.map(slide => (
-                    <div key={slide.key}>
-                        <img src={slide.url} alt="" />
+                {images.map((slide, i) => (
+                    <div key={slide.key} className="carousel-slide">
+                        <img src={slide.url} alt={slide.description || `photo ${i + 1}`} />
+                        {slide.description && (
+                            <p className="custom-legend">{slide.description}</p>
+                        )}
                     </div>
                 ))}
             </Carousel>

@@ -19,13 +19,14 @@ function EcurieSiteScreen() {
     useEffect(() => {
         client
             .fetch(`*[_type == "gallery" && title == "Salle Ecurie"][0]{
-      photos[]{asset->{url}}
+      photos[]{asset->{url}, description}
     }`)
             .then((data) => {
                 if (data?.photos) {
                     const urls = data.photos.map((p) => ({
                         key: p._key,
                         url: p.asset.url,
+                        description: p.description,
                     }))
                     setGallerySalleEcurie(urls)
                 }
@@ -34,13 +35,14 @@ function EcurieSiteScreen() {
     useEffect(() => {
         client
             .fetch(`*[_type == "gallery" && title == "La Maison de l'Etrier"][0]{
-      photos[]{asset->{url}}
+      photos[]{asset->{url}, description}
     }`)
             .then((data) => {
                 if (data?.photos) {
                     const urls = data.photos.map((p) => ({
                         key: p._key,
                         url: p.asset.url,
+                        description: p.description,
                     }))
                     setGalleryMaisonEtrier(urls)
                 }
@@ -49,13 +51,14 @@ function EcurieSiteScreen() {
     useEffect(() => {
         client
             .fetch(`*[_type == "gallery" && title == "La Maison des Lads"][0]{
-      photos[]{asset->{url}}
+      photos[]{asset->{url}, description}
     }`)
             .then((data) => {
                 if (data?.photos) {
                     const urls = data.photos.map((p) => ({
                         key: p._key,
                         url: p.asset.url,
+                        description: p.description,
                     }))
                     setGalleryMaisonLads(urls)
                 }
@@ -64,13 +67,14 @@ function EcurieSiteScreen() {
     useEffect(() => {
         client
             .fetch(`*[_type == "gallery" && title == "La Maison du Palfrenier"][0]{
-      photos[]{asset->{url}}
+      photos[]{asset->{url}, description}
     }`)
             .then((data) => {
                 if (data?.photos) {
                     const urls = data.photos.map((p) => ({
                         key: p._key,
                         url: p.asset.url,
+                        description: p.description,
                     }))
                     setGalleryMaisonPalfrenier(urls)
                 }
@@ -79,13 +83,14 @@ function EcurieSiteScreen() {
     useEffect(() => {
         client
             .fetch(`*[_type == "gallery" && title == "La Maison du Jockey"][0]{
-      photos[]{asset->{url}}
+      photos[]{asset->{url}, description}
     }`)
             .then((data) => {
                 if (data?.photos) {
                     const urls = data.photos.map((p) => ({
                         key: p._key,
                         url: p.asset.url,
+                        description: p.description,
                     }))
                     setGalleryMaisonJockey(urls)
                 }

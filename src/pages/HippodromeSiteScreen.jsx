@@ -20,13 +20,14 @@ function HippodromeSiteScreen() {
     useEffect(() => {
         client
             .fetch(`*[_type == "gallery" && title == "Salle Hippodrome"][0]{
-      photos[]{asset->{url}}
+      photos[]{asset->{url}, description}
     }`)
             .then((data) => {
                 if (data?.photos) {
                     const urls = data.photos.map((p) => ({
                         key: p._key,
                         url: p.asset.url,
+                        description: p.description,
                     }))
                     setGallerySalleHippodrome(urls)
                 }
@@ -36,13 +37,14 @@ function HippodromeSiteScreen() {
     useEffect(() => {
         client
             .fetch(`*[_type == "gallery" && title == "Le Manoir Coventry"][0]{
-      photos[]{asset->{url}}
+      photos[]{asset->{url}, description}
     }`)
             .then((data) => {
                 if (data?.photos) {
                     const urls = data.photos.map((p) => ({
                         key: p._key,
                         url: p.asset.url,
+                        description: p.description,
                     }))
                     setGalleryManoirCoventry(urls)
                 }
@@ -52,13 +54,14 @@ function HippodromeSiteScreen() {
     useEffect(() => {
         client
             .fetch(`*[_type == "gallery" && title == "Le Pur Sang"][0]{
-      photos[]{asset->{url}}
+      photos[]{asset->{url}, description}
     }`)
             .then((data) => {
                 if (data?.photos) {
                     const urls = data.photos.map((p) => ({
                         key: p._key,
                         url: p.asset.url,
+                        description: p.description,
                     }))
                     setGalleryPurSang(urls)
                 }
@@ -68,13 +71,14 @@ function HippodromeSiteScreen() {
     useEffect(() => {
         client
             .fetch(`*[_type == "gallery" && title == "Le Pur Sang"][0]{
-      photos[]{asset->{url}}
+      photos[]{asset->{url}, description}
     }`)
             .then((data) => {
                 if (data?.photos) {
                     const urls = data.photos.map((p) => ({
                         key: p._key,
                         url: p.asset.url,
+                        description: p.description,
                     }))
                     setGalleryPurSang(urls)
                 }
@@ -84,13 +88,14 @@ function HippodromeSiteScreen() {
     useEffect(() => {
         client
             .fetch(`*[_type == "gallery" && title == "La Sellerie"][0]{
-      photos[]{asset->{url}}
+      photos[]{asset->{url}, description}
     }`)
             .then((data) => {
                 if (data?.photos) {
                     const urls = data.photos.map((p) => ({
                         key: p._key,
                         url: p.asset.url,
+                        description: p.description,
                     }))
                     setGallerySellerie(urls)
                 }
@@ -100,13 +105,14 @@ function HippodromeSiteScreen() {
     useEffect(() => {
         client
             .fetch(`*[_type == "gallery" && title == "Le Paddock"][0]{
-      photos[]{asset->{url}}
+      photos[]{asset->{url}, description}
     }`)
             .then((data) => {
                 if (data?.photos) {
                     const urls = data.photos.map((p) => ({
                         key: p._key,
                         url: p.asset.url,
+                        description: p.description,
                     }))
                     setGalleryPaddock(urls)
                 }
