@@ -10,7 +10,7 @@ function PricesScreen() {
         <div>
             <HeaderMenu />
             <div className="prices-title">
-                <h1>Nos offres (2025 à 2026)</h1>
+                <h1>Nos offres (2026 à 2027)</h1>
             </div>
 
             <div className="offers-line">
@@ -21,7 +21,7 @@ function PricesScreen() {
                         <p>
                             Salle de réception & hébergements
                             <br />
-                            Prix : <strong>6500€ TTC *</strong>
+                            Prix TTC : <strong>6500€ en 2026 / 6900€ en 2027</strong>
                             <br />
                             <i>Nous contacter pour réserver</i>
                         </p>
@@ -34,7 +34,7 @@ function PricesScreen() {
                         <p>
                             Salle de réception & hébergements
                             <br />
-                            Prix : <strong>4500€ TTC *</strong>
+                            Prix TTC : <strong>4500€ en 2026 / 4800€ en 2027</strong>
                             <br />
                             <i>Nous contacter pour réserver</i>
                         </p>
@@ -47,7 +47,7 @@ function PricesScreen() {
                         <p>
                             Salle de réception & hébergements
                             <br />
-                            Prix : <strong>8500€ TTC *</strong>
+                            Prix TTC : <strong>8500€ en 2026 / 9500€ en 2027</strong>
                             <br />
                             <i>Nous contacter pour réserver</i>
                         </p>
@@ -55,7 +55,7 @@ function PricesScreen() {
                 </div>
             </div>
             <div className="legend-section">
-                <strong>*</strong> Nous nous réservons le droit de modifier les tarifs pour l'année <strong>2027</strong>.
+                <strong></strong> Nous nous réservons le droit de modifier les tarifs pour l'année <strong>2028</strong>.
             </div>
 
             <ContactFooter />
