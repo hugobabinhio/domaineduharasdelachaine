@@ -11,6 +11,9 @@ function HeaderMenu() {
 
     return (
         <header>
+            <div className="promo-banner">
+                🎉 Offre spéciale : <b>-25%</b> pour les WE du <b>25-26 juillet</b> et <b>1-2 août 2026</b> ! <Link to='/prices'>En savoir plus</Link>
+            </div>
             <div className="menu">
                 <img src={domainLogo} alt="" />
                 <div className="trigger-3pp-menu" onClick={toggleMenu}>

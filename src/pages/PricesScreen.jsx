@@ -21,7 +21,13 @@ function PricesScreen() {
                         <p>
                             Salle de réception & hébergements
                             <br />
-                            Prix TTC : <strong>6500€ en 2026 / 6900€ en 2027</strong>
+                            Prix du WE TTC :
+                            <br />
+                            🎉 <b>-25%</b> le WE du <b>25-26 juillet 2026</b> soit <s>6500€</s> <b>4875€</b>
+                            <br />
+                            <b>6500€</b> les autres dates de <b>2026</b>
+                            <br />
+                            <b>6900€</b> en <b>2027</b>
                             <br />
                             <i>Nous contacter pour réserver</i>
                         </p>
@@ -34,7 +40,11 @@ function PricesScreen() {
                         <p>
                             Salle de réception & hébergements
                             <br />
-                            Prix TTC : <strong>4500€ en 2026 / 4800€ en 2027</strong>
+                            Prix du WE TTC :
+                            <br />
+                            <b>4500€</b> en <b>2026</b>
+                            <br />
+                            <b>4800€</b> en <b>2027</b>
                             <br />
                             <i>Nous contacter pour réserver</i>
                         </p>
@@ -47,7 +57,13 @@ function PricesScreen() {
                         <p>
                             Salle de réception & hébergements
                             <br />
-                            Prix TTC : <strong>8500€ en 2026 / 9500€ en 2027</strong>
+                            Prix du WE TTC :
+                            <br />
+                            🎉 -25% le WE du <b>1-2 août 2026</b> soit <s>8500€</s> <b>6375€</b>
+                            <br />
+                            <b>8500€</b> les autres dates de <b>2026</b>
+                            <br />
+                            <b>9500€</b> en <b>2027</b>
                             <br />
                             <i>Nous contacter pour réserver</i>
                         </p>
