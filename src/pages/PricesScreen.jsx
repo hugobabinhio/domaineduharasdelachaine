@@ -74,13 +74,6 @@ function PricesScreen() {
                                 Salle de réception & hébergements
                             </p>
                             <p>
-                                🎉 Offre spéciale de <b>-25%</b> soit <s>8500€</s> <b>6375€</b> pour les WE :
-                                <br />
-                                - du <b>25-26 juillet 2026</b>
-                                <br />
-                                - du <b>1-2 août 2026</b>
-                            </p>
-                            <p>
                                 Prix des autres WE :
                                 <br />
                                 - <b>8500€</b> en <b>2026</b>
