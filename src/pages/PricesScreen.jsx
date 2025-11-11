@@ -18,55 +18,77 @@ function PricesScreen() {
                     <span className="offers-line-title">Site de l'Hippodrome</span>
                     <div className="offer-description">
                         <img src={hippodromeThumbnail} alt="" />
-                        <p>
-                            Salle de réception & hébergements
-                            <br />
-                            Prix du WE TTC :
-                            <br />
-                            🎉 <b>-25%</b> le WE du <b>25-26 juillet 2026</b> soit <s>6500€</s> <b>4875€</b>
-                            <br />
-                            <b>6500€</b> les autres dates de <b>2026</b>
-                            <br />
-                            <b>6900€</b> en <b>2027</b>
-                            <br />
+                        <div>
+                            <p>
+                                Salle de réception & hébergements
+                            </p>
+                            <p>
+                                🎉 Offre spéciale de <b>-25%</b> soit <s>6500€</s> <b>4875€</b> pour les WE :
+                                <br />
+                                - du <b>25-26 juillet 2026</b>
+                                <br />
+                                - du <b>1-2 août 2026</b>
+                            </p>
+                            <p>
+                                Prix des autres WE :
+                                <br />
+                                - <b>6500€</b> en 2026
+                                <br />
+                                - <b>6900€</b> en 2027
+                            </p>
                             <i>Nous contacter pour réserver</i>
-                        </p>
+                        </div>
+
                     </div>
                 </div>
                 <div className="offer-block">
                     <span className="offers-line-title">Site de l'Ecurie</span>
                     <div className="offer-description">
                         <img src={ecurieThumbnail} alt="" />
-                        <p>
-                            Salle de réception & hébergements
-                            <br />
-                            Prix du WE TTC :
-                            <br />
-                            <b>4500€</b> en <b>2026</b>
-                            <br />
-                            <b>4800€</b> en <b>2027</b>
-                            <br />
+                        <div>
+                            <p>
+                                Salle de réception & hébergements
+                            </p>
+                            <p>
+                                🎉 Offre spéciale de <b>-25%</b> soit <s>4500€</s> <b>3375€</b> pour le WE :
+                                <br />
+                                - du <b>1-2 août 2026</b>
+                            </p>
+                            <p>
+                                Prix des autres WE :
+                                <br />
+                                - <b>4500€</b> en <b>2026</b>
+                                <br />
+                                - <b>4800€</b> en <b>2027</b>
+                            </p>
                             <i>Nous contacter pour réserver</i>
-                        </p>
+                        </div>
                     </div>
                 </div>
                 <div className="offer-block">
                     <span className="offers-line-title">Les 2 sites</span>
                     <div className="offer-description">
                         <img src={skyViewThumbnail} alt="" />
-                        <p>
-                            Salle de réception & hébergements
-                            <br />
-                            Prix du WE TTC :
-                            <br />
-                            🎉 -25% le WE du <b>1-2 août 2026</b> soit <s>8500€</s> <b>6375€</b>
-                            <br />
-                            <b>8500€</b> les autres dates de <b>2026</b>
-                            <br />
-                            <b>9500€</b> en <b>2027</b>
-                            <br />
+                        <div>
+                            <p>
+                                Salle de réception & hébergements
+                            </p>
+                            <p>
+                                🎉 Offre spéciale de <b>-25%</b> soit <s>8500€</s> <b>6375€</b> pour les WE :
+                                <br />
+                                - du <b>25-26 juillet 2026</b>
+                                <br />
+                                - du <b>1-2 août 2026</b>
+                            </p>
+                            <p>
+                                Prix des autres WE :
+                                <br />
+                                - <b>8500€</b> en <b>2026</b>
+                                <br />
+                                - <b>9500€</b> en <b>2027</b>
+                            </p>
                             <i>Nous contacter pour réserver</i>
-                        </p>
+                        </div>
                     </div>
                 </div>
             </div>

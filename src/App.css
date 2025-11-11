@@ -390,6 +390,7 @@ h2 {
 }
 
 .offer-description {
+  align-items: center;
   display: grid;
   grid-template-columns: 50% 50%;
   font-family: "Roboto";
@@ -401,10 +402,14 @@ h2 {
   width: 100%;
 }
 
-.offer-description p {
+.offer-description div {
   margin: auto;
   text-align: left;
   padding-left: 4%;
+}
+
+.offer-description div p {
+  margin-bottom: 5px;
 }
 
 /* Accès */
@@ -648,6 +653,19 @@ footer img {
 
   .offer-block {
     padding: 20px;
+  }
+
+  .offer-description {
+    grid-template-columns: 100%;
+    grid-template-rows: 2fr;
+    grid-template-areas:
+      "img"
+      "div";
+  }
+
+  .offer-description div {
+    padding-left: 0;
+    padding-top: 1em;
   }
 
   .legend-section {
